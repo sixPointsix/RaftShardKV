@@ -1,0 +1,1416 @@
+000354 <Raft> [INFO] #0 get vote form #2, &{1 true}
+000354 <Raft> [IMPORTANT] #0 be leader, Term: 1
+000354 <Raft> [INFO] #0 replicate, term: 1
+000355 <Raft> [INFO] #2 get vote form #1, &{2 true}
+000355 <Raft> [IMPORTANT] #2 be leader, Term: 2
+000355 <Raft> [INFO] #2 replicate, term: 2
+000356 <Raft> [INFO] #1 get vote form #2, &{1 true}
+000356 <Raft> [IMPORTANT] #1 be leader, Term: 1
+000356 <Raft> [INFO] #1 replicate, term: 1
+000362 <Raft> [INFO] #2 replicate, term: 2
+000362 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 1 map[] [] 0 0 1}
+000362 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 1 map[] [] 0 0 1}
+000412 <Raft> [INFO] #2 replicate, term: 2
+000412 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 1 map[] [] 0 0 -1}
+000412 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 1 map[] [] 0 0 1}
+000413 <Raft> [INFO] #2 replicate, term: 2
+000413 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 2 map[] [] 0 0 1}
+000414 <Raft> [INFO] #2 replicate, term: 2
+000414 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Join 3014227812894518110 1 map[100:[server-100-0 server-100-1 server-100-2]] [] 0 0 0}
+000414 <ShardCtrler> [INFO] new config: {1 [100 100 100 100 100 100 100 100 100 100] map[100:[server-100-0 server-100-1 server-100-2]]}
+000415 <Raft> [INFO] #2 replicate, term: 2
+000414 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Join 3014227812894518110 2 map[101:[server-101-0 server-101-1 server-101-2]] [] 0 0 0}
+000414 <ShardCtrler> [INFO] new config: {2 [101 101 101 101 101 100 100 100 100 100] map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000415 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 1 map[] [] 0 0 -1}
+000415 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 2 map[] [] 0 0 1}
+000415 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Join 3014227812894518110 1 map[100:[server-100-0 server-100-1 server-100-2]] [] 0 0 0}
+000415 <ShardCtrler> [INFO] new config: {1 [100 100 100 100 100 100 100 100 100 100] map[100:[server-100-0 server-100-1 server-100-2]]}
+000415 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 1 map[] [] 0 0 -1}
+000415 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 2 map[] [] 0 0 1}
+000415 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Join 3014227812894518110 1 map[100:[server-100-0 server-100-1 server-100-2]] [] 0 0 0}
+000415 <ShardCtrler> [INFO] new config: {1 [100 100 100 100 100 100 100 100 100 100] map[100:[server-100-0 server-100-1 server-100-2]]}
+000415 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Join 3014227812894518110 2 map[101:[server-101-0 server-101-1 server-101-2]] [] 0 0 0}
+000415 <ShardCtrler> [INFO] new config: {2 [101 101 101 101 101 100 100 100 100 100] map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000456 <Raft> [INFO] #1 replicate, term: 1
+000456 <Raft> [INFO] #2 replicate, term: 2
+000456 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Join 3014227812894518110 2 map[101:[server-101-0 server-101-1 server-101-2]] [] 0 0 0}
+000456 <ShardCtrler> [INFO] new config: {2 [101 101 101 101 101 100 100 100 100 100] map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000465 <Raft> [INFO] #2 replicate, term: 2
+000465 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 3 map[] [] 0 0 1}
+000466 <Raft> [INFO] #1 replicate, term: 1
+000466 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 3 map[] [] 0 0 1}
+000468 [WARN] #0(gid: 100) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+000469 [WARN] #1(gid: 100) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+000516 <Raft> [INFO] #2 replicate, term: 2
+000516 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 2 map[] [] 0 0 -1}
+000517 [INFO] #0(gid: 100) args: &{OpType:Put Key:0 Value:WMvEiNHJqOB8Q7RGjNeU ClientId:1663639798575742122 SeqId:1} reply: &{Err:ErrWrongLeader Value:}
+000517 <Raft> [INFO] #1 replicate, term: 1
+000517 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 3 map[] [] 0 0 1}
+000522 <Raft> [INFO] #2 replicate, term: 2
+000521 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 4 map[] [] 0 0 2}
+000522 <Raft> [INFO] #1 replicate, term: 1
+000522 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 2 map[] [] 0 0 -1}
+000522 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 2 map[] [] 0 0 -1}
+000522 [WARN] #1(gid: 100) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000522 [WARN] #2(gid: 100) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+000522 [INFO] #1(gid: 100) args: &{OpType:Put Key:0 Value:WMvEiNHJqOB8Q7RGjNeU ClientId:1663639798575742122 SeqId:1} reply: &{Err:OK Value:}
+000523 [INFO] #0(gid: 100) args: &{OpType:Put Key:1 Value:uQ282W6hnlStU3dq1UD5 ClientId:1663639798575742122 SeqId:2} reply: &{Err:ErrWrongLeader Value:}
+000523 <Raft> [INFO] #1 replicate, term: 1
+000528 [WARN] #0(gid: 100) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000528 [WARN] #2(gid: 100) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000528 [INFO] #1(gid: 100) args: &{OpType:Put Key:1 Value:uQ282W6hnlStU3dq1UD5 ClientId:1663639798575742122 SeqId:2} reply: &{Err:OK Value:}
+000528 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+000528 [INFO] #0(gid: 101) args: &{OpType:Put Key:2 Value:i8N_MAwHrvmovs1FDSEF ClientId:1663639798575742122 SeqId:3} reply: &{Err:ErrWrongGroup Value:}
+000557 <Raft> [INFO] #2 replicate, term: 2
+000557 <Raft> [INFO] #1 replicate, term: 1
+000558 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 4 map[] [] 0 0 2}
+000558 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 4 map[] [] 0 0 2}
+000577 [WARN]G1 S100 shard: &{KV:map[] Status:2 LastCmdContext:map[]}
+000577 [WARN] #1(gid: 100) don't need fetch config!
+000628 [WARN]G1 S100 shard: &{KV:map[] Status:2 LastCmdContext:map[]}
+000628 [WARN] #1(gid: 100) don't need fetch config!
+000630 <Raft> [INFO] #2 replicate, term: 2
+000630 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 3 map[] [] 0 0 -1}
+000630 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+000630 [INFO] #0(gid: 101) args: &{OpType:Put Key:2 Value:i8N_MAwHrvmovs1FDSEF ClientId:1663639798575742122 SeqId:3} reply: &{Err:ErrWrongGroup Value:}
+000630 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 3 map[] [] 0 0 -1}
+000657 <Raft> [INFO] #1 replicate, term: 1
+000658 <Raft> [INFO] #2 replicate, term: 2
+000658 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 3 map[] [] 0 0 -1}
+000673 <Raft> [INFO] #2 get vote form #1, &{2 true}
+000673 <Raft> [IMPORTANT] #2 be leader, Term: 2
+000673 <Raft> [INFO] #2 replicate, term: 2
+000679 [WARN]G1 S100 shard: &{KV:map[] Status:2 LastCmdContext:map[]}
+000679 [WARN] #1(gid: 100) don't need fetch config!
+000692 <Raft> [INFO] #1 get vote form #2, &{2 true}
+000692 <Raft> [IMPORTANT] #1 be leader, Term: 2
+000692 <Raft> [INFO] #1 replicate, term: 2
+000716 <Raft> [INFO] #2 replicate, term: 2
+000716 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 1 map[] [] 0 0 1}
+000716 <Raft> [INFO] #1 replicate, term: 2
+000720 <Raft> [INFO] #2 replicate, term: 2
+000719 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 3075751612510037968 1 map[] [] 0 0 1}
+000720 <Raft> [INFO] #2 replicate, term: 2
+000720 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 1 map[] [] 0 0 1}
+000720 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 3075751612510037968 1 map[] [] 0 0 1}
+000720 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 1 map[] [] 0 0 1}
+000721 [WARN] #1(gid: 102) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+000721 [WARN] #0(gid: 102) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+000723 [WARN] #2(gid: 101) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+000729 [WARN]G1 S100 shard: &{KV:map[] Status:2 LastCmdContext:map[]}
+000729 [WARN] #1(gid: 100) don't need fetch config!
+000732 <Raft> [INFO] #2 replicate, term: 2
+000732 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 4 map[] [] 0 0 -1}
+000732 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+000732 [INFO] #0(gid: 101) args: &{OpType:Put Key:2 Value:i8N_MAwHrvmovs1FDSEF ClientId:1663639798575742122 SeqId:3} reply: &{Err:ErrWrongGroup Value:}
+000732 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 3075751612510037968 1 map[] [] 0 0 1}
+000758 <Raft> [INFO] #2 replicate, term: 2
+000758 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 4 map[] [] 0 0 -1}
+000758 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 4 map[] [] 0 0 -1}
+000759 <Raft> [INFO] #1 replicate, term: 1
+000772 <Raft> [INFO] #2 replicate, term: 2
+000772 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 2 map[] [] 0 0 2}
+000773 <Raft> [INFO] #1 replicate, term: 2
+000774 <Raft> [INFO] #2 replicate, term: 2
+000775 [WARN] #0(gid: 102) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000775 [WARN] #1(gid: 101) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+000776 [WARN] #1(gid: 102) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000776 [WARN] #2(gid: 102) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+000777 <Raft> [INFO] #2 replicate, term: 2
+000777 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 3075751612510037968 2 map[] [] 0 0 2}
+000777 <Raft> [INFO] #2 replicate, term: 2
+000777 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 2 map[] [] 0 0 2}
+000777 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 2 map[] [] 0 0 2}
+000777 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 3075751612510037968 2 map[] [] 0 0 2}
+000778 [WARN] #2(gid: 101) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000779 [WARN] #0(gid: 101) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+000779 [WARN] #0(gid: 101) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000779 [WARN]G1 S100 shard: &{KV:map[] Status:2 LastCmdContext:map[]}
+000779 [WARN] #1(gid: 100) don't need fetch config!
+000792 <Raft> [INFO] #1 replicate, term: 2
+000793 [WARN] #2(gid: 102) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000820 [SEVER] #2(gid: 101) migrationAction wait
+000821 [SEVER] #0(gid: 100) GetShardsData: args: &{ConfNum:2 ShardIds:[1 2 3 4 0]} reply: &{Err:ErrWrongLeader ConfNum:0 Shards:map[]}
+000821 [SEVER] #1(gid: 100) GetShardsData: args: &{ConfNum:2 ShardIds:[1 2 3 4 0]} reply: &{Err:OK ConfNum:2 Shards:map[0:0xc0003eca50 1:0xc0003ec9f0 2:0xc0003eca08 3:0xc0003eca20 4:0xc0003eca38]}
+000822 <Raft> [INFO] #2 replicate, term: 2
+000822 [SEVER] #0(gid: 101) before applyInsertShards: map[0:0xc0003976b0 1:0xc0003976c8 2:0xc0003976e0 3:0xc0003976f8 4:0xc000397710]
+000822 [SEVER] #0(gid: 101) after applyInsertShards: map[0:0xc0003edfe0 1:0xc0003edf80 2:0xc0003edf98 3:0xc0003edfb0 4:0xc0003edfc8]
+000822 [SEVER] #2(gid: 101) before applyInsertShards: map[0:0xc000011818 1:0xc000011830 2:0xc000011848 3:0xc000011860 4:0xc000011878]
+000822 [SEVER] #2(gid: 101) after applyInsertShards: map[0:0xc0004b0030 1:0xc0004b0048 2:0xc0004b0060 3:0xc0004b0000 4:0xc0004b0018]
+000823 [WARN] #1(gid: 101) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+000827 [SEVER] #2(gid: 100) GetShardsData: args: &{ConfNum:2 ShardIds:[1 2 3 4 0]} reply: &{Err:ErrWrongLeader ConfNum:0 Shards:map[]}
+000827 [SEVER] #2(gid: 101) migrationAction done
+000829 <Raft> [INFO] #2 replicate, term: 2
+000828 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 3 map[] [] 0 0 3}
+000829 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 3075751612510037968 2 map[] [] 0 0 2}
+000829 [WARN]G1 S100 shard: &{KV:map[] Status:2 LastCmdContext:map[]}
+000829 [WARN] #1(gid: 100) don't need fetch config!
+000829 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 3 map[] [] 0 0 3}
+000832 [WARN]G2 S101 shard: &{KV:map[] Status:3 LastCmdContext:map[]}
+000832 [WARN] #2(gid: 101) don't need fetch config!
+000833 <Raft> [INFO] #2 replicate, term: 2
+000833 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 3 map[] [] 0 0 3}
+000833 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 5 map[] [] 0 0 -1}
+000833 [INFO] #0(gid: 101) args: &{OpType:Put Key:2 Value:i8N_MAwHrvmovs1FDSEF ClientId:1663639798575742122 SeqId:3} reply: &{Err:ErrWrongLeader Value:}
+000834 [WARN] #1(gid: 101) shard 0 is &{KV:map[] Status:1 LastCmdContext:map[]}, can't servering(101)
+000834 [INFO] #1(gid: 101) args: &{OpType:Put Key:2 Value:i8N_MAwHrvmovs1FDSEF ClientId:1663639798575742122 SeqId:3} reply: &{Err:ErrWrongGroup Value:}
+000834 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 5 map[] [] 0 0 -1}
+000859 <Raft> [INFO] #2 replicate, term: 2
+000859 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 5 map[] [] 0 0 -1}
+000860 <Raft> [INFO] #1 replicate, term: 1
+000871 <Raft> [INFO] #1 replicate, term: 1
+000874 <Raft> [INFO] #2 replicate, term: 2
+000879 [SEVER] #1(gid: 101) before applyInsertShards: map[0:0xc0004b0090 1:0xc0004b00a8 2:0xc0004b00c0 3:0xc0004b00d8 4:0xc0004b00f0]
+000879 [SEVER] #1(gid: 101) after applyInsertShards: map[0:0xc0003c2798 1:0xc0003c2738 2:0xc0003c2750 3:0xc0003c2768 4:0xc0003c2780]
+000880 <Raft> [INFO] #2 replicate, term: 2
+000881 <Raft> [INFO] #2 replicate, term: 2
+000882 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 5 map[] [] 0 0 3}
+000882 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 4 map[] [] 0 0 3}
+000882 [WARN]G2 S101 shard: &{KV:map[] Status:3 LastCmdContext:map[]}
+000883 [WARN] #2(gid: 101) don't need fetch config!
+000884 <Raft> [INFO] #2 replicate, term: 2
+000884 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 5 map[] [] 0 0 3}
+000884 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 4 map[] [] 0 0 3}
+000885 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 5 map[] [] 0 0 3}
+000893 <Raft> [INFO] #1 replicate, term: 2
+000934 <Raft> [INFO] #2 replicate, term: 2
+000934 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 5 map[] [] 0 0 3}
+000935 <Raft> [INFO] #2 replicate, term: 2
+000935 <Raft> [INFO] #2 replicate, term: 2
+000935 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 5 map[] [] 0 0 3}
+000935 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 4 map[] [] 0 0 3}
+000936 <Raft> [INFO] #2 replicate, term: 2
+000936 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 6 map[] [] 0 0 3}
+000936 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 3075751612510037968 3 map[] [] 0 0 3}
+000936 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 5 map[] [] 0 0 3}
+000936 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 6 map[] [] 0 0 -1}
+000936 [INFO] #0(gid: 101) args: &{OpType:Put Key:2 Value:i8N_MAwHrvmovs1FDSEF ClientId:1663639798575742122 SeqId:3} reply: &{Err:ErrWrongLeader Value:}
+000936 [INFO] #1(gid: 101) args: &{OpType:Put Key:2 Value:i8N_MAwHrvmovs1FDSEF ClientId:1663639798575742122 SeqId:3} reply: &{Err:ErrWrongLeader Value:}
+000937 <Raft> [INFO] #2 replicate, term: 2
+000938 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 6 map[] [] 0 0 3}
+000938 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 3075751612510037968 3 map[] [] 0 0 3}
+000938 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 6 map[] [] 0 0 -1}
+000943 [INFO] #2(gid: 101) args: &{OpType:Put Key:2 Value:i8N_MAwHrvmovs1FDSEF ClientId:1663639798575742122 SeqId:3} reply: &{Err:OK Value:}
+000943 [INFO] #0(gid: 101) args: &{OpType:Put Key:3 Value:8njUjkhAJDFAolmGF-oT ClientId:1663639798575742122 SeqId:4} reply: &{Err:ErrWrongLeader Value:}
+000943 [INFO] #1(gid: 101) args: &{OpType:Put Key:3 Value:8njUjkhAJDFAolmGF-oT ClientId:1663639798575742122 SeqId:4} reply: &{Err:ErrWrongLeader Value:}
+000944 <Raft> [INFO] #2 replicate, term: 2
+000954 [INFO] #2(gid: 101) args: &{OpType:Put Key:3 Value:8njUjkhAJDFAolmGF-oT ClientId:1663639798575742122 SeqId:4} reply: &{Err:OK Value:}
+000955 [INFO] #0(gid: 101) args: &{OpType:Put Key:4 Value:vrIox3wXFiWkKsA_aQWb ClientId:1663639798575742122 SeqId:5} reply: &{Err:ErrWrongLeader Value:}
+000955 [INFO] #1(gid: 101) args: &{OpType:Put Key:4 Value:vrIox3wXFiWkKsA_aQWb ClientId:1663639798575742122 SeqId:5} reply: &{Err:ErrWrongLeader Value:}
+000956 <Raft> [INFO] #2 replicate, term: 2
+000959 <Raft> [INFO] #2 replicate, term: 2
+000959 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 6 map[] [] 0 0 3}
+000959 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 3075751612510037968 3 map[] [] 0 0 3}
+000959 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 6 map[] [] 0 0 -1}
+000960 <Raft> [INFO] #1 replicate, term: 1
+000965 [INFO] #2(gid: 101) args: &{OpType:Put Key:4 Value:vrIox3wXFiWkKsA_aQWb ClientId:1663639798575742122 SeqId:5} reply: &{Err:OK Value:}
+000966 [INFO] #0(gid: 101) args: &{OpType:Put Key:5 Value:Q1UXrJILAmuHaUmSoQqm ClientId:1663639798575742122 SeqId:6} reply: &{Err:ErrWrongLeader Value:}
+000966 [INFO] #1(gid: 101) args: &{OpType:Put Key:5 Value:Q1UXrJILAmuHaUmSoQqm ClientId:1663639798575742122 SeqId:6} reply: &{Err:ErrWrongLeader Value:}
+000966 <Raft> [INFO] #2 replicate, term: 2
+000975 <Raft> [INFO] #2 replicate, term: 2
+000978 [INFO] #2(gid: 101) args: &{OpType:Put Key:5 Value:Q1UXrJILAmuHaUmSoQqm ClientId:1663639798575742122 SeqId:6} reply: &{Err:OK Value:}
+000978 [INFO] #0(gid: 101) args: &{OpType:Put Key:6 Value:9lUJ0RTyDjvoyQ--rXaE ClientId:1663639798575742122 SeqId:7} reply: &{Err:ErrWrongLeader Value:}
+000978 [INFO] #1(gid: 101) args: &{OpType:Put Key:6 Value:9lUJ0RTyDjvoyQ--rXaE ClientId:1663639798575742122 SeqId:7} reply: &{Err:ErrWrongLeader Value:}
+000979 <Raft> [INFO] #2 replicate, term: 2
+000985 [INFO] #2(gid: 101) args: &{OpType:Put Key:6 Value:9lUJ0RTyDjvoyQ--rXaE ClientId:1663639798575742122 SeqId:7} reply: &{Err:OK Value:}
+000985 [INFO] #0(gid: 100) args: &{OpType:Put Key:7 Value:0vOFENBbQvAW2tq1D6Vq ClientId:1663639798575742122 SeqId:8} reply: &{Err:ErrWrongLeader Value:}
+000985 <Raft> [INFO] #1 replicate, term: 1
+000987 <Raft> [INFO] #2 replicate, term: 2
+000987 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 6 map[] [] 0 0 3}
+000987 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 6 map[] [] 0 0 3}
+000988 <Raft> [INFO] #2 replicate, term: 2
+000988 <Raft> [INFO] #2 replicate, term: 2
+000988 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 6 map[] [] 0 0 3}
+000988 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 7 map[] [] 0 0 3}
+000988 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 7 map[] [] 0 0 3}
+000988 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 3075751612510037968 4 map[] [] 0 0 3}
+000989 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 7 map[] [] 0 0 3}
+000991 [INFO] #1(gid: 100) args: &{OpType:Put Key:7 Value:0vOFENBbQvAW2tq1D6Vq ClientId:1663639798575742122 SeqId:8} reply: &{Err:OK Value:}
+000991 [INFO] #0(gid: 100) args: &{OpType:Put Key:8 Value:4fET22XN-DthuTxwLUTg ClientId:1663639798575742122 SeqId:9} reply: &{Err:ErrWrongLeader Value:}
+000992 <Raft> [INFO] #1 replicate, term: 1
+000993 <Raft> [INFO] #1 replicate, term: 2
+000996 [INFO] #1(gid: 100) args: &{OpType:Put Key:8 Value:4fET22XN-DthuTxwLUTg ClientId:1663639798575742122 SeqId:9} reply: &{Err:OK Value:}
+000997 [INFO] #0(gid: 100) args: &{OpType:Put Key:9 Value:ElE0nSOwDxKqsrtIkV7O ClientId:1663639798575742122 SeqId:10} reply: &{Err:ErrWrongLeader Value:}
+000997 <Raft> [INFO] #1 replicate, term: 1
+001003 [INFO] #1(gid: 100) args: &{OpType:Put Key:9 Value:ElE0nSOwDxKqsrtIkV7O ClientId:1663639798575742122 SeqId:10} reply: &{Err:OK Value:}
+001003 [INFO] #0(gid: 100) args: &{OpType:Get Key:0 Value: ClientId:1663639798575742122 SeqId:11} reply: &{Err:ErrWrongLeader Value:}
+001005 <Raft> [INFO] #1 replicate, term: 1
+001011 [INFO] #1(gid: 100) args: &{OpType:Get Key:0 Value: ClientId:1663639798575742122 SeqId:11} reply: &{Err:OK Value:WMvEiNHJqOB8Q7RGjNeU}
+001011 [INFO] #0(gid: 100) args: &{OpType:Get Key:1 Value: ClientId:1663639798575742122 SeqId:12} reply: &{Err:ErrWrongLeader Value:}
+001012 <Raft> [INFO] #1 replicate, term: 1
+001017 [INFO] #1(gid: 100) args: &{OpType:Get Key:1 Value: ClientId:1663639798575742122 SeqId:12} reply: &{Err:OK Value:uQ282W6hnlStU3dq1UD5}
+001017 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:13} reply: &{Err:ErrWrongLeader Value:}
+001017 [INFO] #1(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:13} reply: &{Err:ErrWrongLeader Value:}
+001018 <Raft> [INFO] #2 replicate, term: 2
+001023 [INFO] #2(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:13} reply: &{Err:OK Value:i8N_MAwHrvmovs1FDSEF}
+001023 [INFO] #0(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:1663639798575742122 SeqId:14} reply: &{Err:ErrWrongLeader Value:}
+001023 [INFO] #1(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:1663639798575742122 SeqId:14} reply: &{Err:ErrWrongLeader Value:}
+001024 <Raft> [INFO] #2 replicate, term: 2
+001029 [INFO] #2(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:1663639798575742122 SeqId:14} reply: &{Err:OK Value:8njUjkhAJDFAolmGF-oT}
+001029 [INFO] #0(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:1663639798575742122 SeqId:15} reply: &{Err:ErrWrongLeader Value:}
+001030 [INFO] #1(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:1663639798575742122 SeqId:15} reply: &{Err:ErrWrongLeader Value:}
+001030 <Raft> [INFO] #2 replicate, term: 2
+001035 [INFO] #2(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:1663639798575742122 SeqId:15} reply: &{Err:OK Value:vrIox3wXFiWkKsA_aQWb}
+001035 [INFO] #0(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:1663639798575742122 SeqId:16} reply: &{Err:ErrWrongLeader Value:}
+001035 [INFO] #1(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:1663639798575742122 SeqId:16} reply: &{Err:ErrWrongLeader Value:}
+001036 <Raft> [INFO] #2 replicate, term: 2
+001038 <Raft> [INFO] #2 replicate, term: 2
+001038 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 7 map[] [] 0 0 3}
+001038 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 3075751612510037968 4 map[] [] 0 0 3}
+001039 <Raft> [INFO] #2 replicate, term: 2
+001039 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 3075751612510037968 5 map[] [] 0 0 3}
+001039 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 7 map[] [] 0 0 3}
+001040 <Raft> [INFO] #2 replicate, term: 2
+001040 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 8 map[] [] 0 0 3}
+001040 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 3075751612510037968 5 map[] [] 0 0 3}
+001041 [INFO] #2(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:1663639798575742122 SeqId:16} reply: &{Err:OK Value:Q1UXrJILAmuHaUmSoQqm}
+001041 [INFO] #0(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:1663639798575742122 SeqId:17} reply: &{Err:ErrWrongLeader Value:}
+001041 [INFO] #1(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:1663639798575742122 SeqId:17} reply: &{Err:ErrWrongLeader Value:}
+001042 <Raft> [INFO] #2 replicate, term: 2
+001041 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 3075751612510037968 4 map[] [] 0 0 3}
+001042 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 7 map[] [] 0 0 3}
+001042 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 3075751612510037968 5 map[] [] 0 0 3}
+001042 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 8 map[] [] 0 0 3}
+001046 [INFO] #2(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:1663639798575742122 SeqId:17} reply: &{Err:OK Value:9lUJ0RTyDjvoyQ--rXaE}
+001047 [INFO] #0(gid: 100) args: &{OpType:Get Key:7 Value: ClientId:1663639798575742122 SeqId:18} reply: &{Err:ErrWrongLeader Value:}
+001047 <Raft> [INFO] #1 replicate, term: 1
+001052 [INFO] #1(gid: 100) args: &{OpType:Get Key:7 Value: ClientId:1663639798575742122 SeqId:18} reply: &{Err:OK Value:0vOFENBbQvAW2tq1D6Vq}
+001052 [INFO] #0(gid: 100) args: &{OpType:Get Key:8 Value: ClientId:1663639798575742122 SeqId:19} reply: &{Err:ErrWrongLeader Value:}
+001053 <Raft> [INFO] #1 replicate, term: 1
+001058 [INFO] #1(gid: 100) args: &{OpType:Get Key:8 Value: ClientId:1663639798575742122 SeqId:19} reply: &{Err:OK Value:4fET22XN-DthuTxwLUTg}
+001059 [INFO] #0(gid: 100) args: &{OpType:Get Key:9 Value: ClientId:1663639798575742122 SeqId:20} reply: &{Err:ErrWrongLeader Value:}
+001059 <Raft> [INFO] #1 replicate, term: 1
+001060 <Raft> [INFO] #2 replicate, term: 2
+001060 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 8 map[] [] 0 0 3}
+001060 <Raft> [INFO] #1 replicate, term: 1
+001064 [INFO] #1(gid: 100) args: &{OpType:Get Key:9 Value: ClientId:1663639798575742122 SeqId:20} reply: &{Err:OK Value:ElE0nSOwDxKqsrtIkV7O}
+001064 [WARN] #0(gid: 101) close shards: map[0:0xc0003edfe0 1:0xc0003edf80 2:0xc0003edf98 3:0xc0003edfb0 4:0xc0003edfc8] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+001064 [WARN] #1(gid: 101) close shards: map[0:0xc0003c2798 1:0xc0003c2738 2:0xc0003c2750 3:0xc0003c2768 4:0xc0003c2780] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+001064 [WARN] #2(gid: 101) close shards: map[0:0xc0004b0030 1:0xc0004b0048 2:0xc0004b0060 3:0xc0004b0000 4:0xc0004b0018] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+001065 <Raft> [INFO] #2 replicate, term: 2
+001065 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 3231912965323119186 1 map[] [] 0 0 -1}
+001066 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 3231912965323119186 1 map[] [] 0 0 -1}
+001066 [INFO] #0(gid: 100) args: &{OpType:Get Key:0 Value: ClientId:1880738948877193827 SeqId:1} reply: &{Err:ErrWrongLeader Value:}
+001067 <Raft> [INFO] #1 replicate, term: 1
+001068 <Raft> [INFO] #2 replicate, term: 2
+001068 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 3846650750484654184 1 map[] [] 0 0 -1}
+001069 <Raft> [INFO] #2 replicate, term: 2
+001068 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 3231912965323119186 1 map[] [] 0 0 -1}
+001068 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 3846650750484654184 1 map[] [] 0 0 -1}
+001069 [INFO] #0(gid: 100) args: &{OpType:Get Key:1 Value: ClientId:2944624721185117473 SeqId:1} reply: &{Err:ErrWrongLeader Value:}
+001069 <Raft> [INFO] #1 replicate, term: 1
+001070 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 3846650750484654184 1 map[] [] 0 0 -1}
+001070 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 1 map[] [] 0 0 -1}
+001070 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 1 map[] [] 0 0 -1}
+001072 <Raft> [INFO] #2 replicate, term: 2
+001072 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 1 map[] [] 0 0 -1}
+001073 <Raft> [INFO] #2 replicate, term: 2
+001073 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 1 map[] [] 0 0 -1}
+001074 <Raft> [INFO] #2 replicate, term: 2
+001074 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 1 map[] [] 0 0 -1}
+001071 [INFO] #1(gid: 100) args: &{OpType:Get Key:0 Value: ClientId:1880738948877193827 SeqId:1} reply: &{Err:OK Value:WMvEiNHJqOB8Q7RGjNeU}
+001074 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 1 map[] [] 0 0 -1}
+001074 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 1 map[] [] 0 0 -1}
+001074 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 1 map[] [] 0 0 -1}
+001075 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 1 map[] [] 0 0 -1}
+001075 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 1 map[] [] 0 0 -1}
+001075 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 1 map[] [] 0 0 -1}
+001076 <Raft> [INFO] #2 replicate, term: 2
+001076 <Raft> [INFO] #2 replicate, term: 2
+001076 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 1 map[] [] 0 0 -1}
+001077 <Raft> [INFO] #2 replicate, term: 2
+001077 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 3845509939618424338 1 map[] [] 0 0 -1}
+001077 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 1 map[] [] 0 0 -1}
+001078 [INFO] #0(gid: 100) args: &{OpType:Get Key:7 Value: ClientId:4459902802778554875 SeqId:1} reply: &{Err:ErrWrongLeader Value:}
+001078 <Raft> [INFO] #1 replicate, term: 1
+001079 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 1 map[] [] 0 0 -1}
+001079 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 1 map[] [] 0 0 -1}
+001079 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 3845509939618424338 1 map[] [] 0 0 -1}
+001080 <Raft> [INFO] #2 replicate, term: 2
+001080 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 3152675238244803415 1 map[] [] 0 0 -1}
+001080 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 3845509939618424338 1 map[] [] 0 0 -1}
+001080 [INFO] #0(gid: 100) args: &{OpType:Get Key:8 Value: ClientId:3354685576350304229 SeqId:1} reply: &{Err:ErrWrongLeader Value:}
+001081 <Raft> [INFO] #1 replicate, term: 1
+001081 [INFO] #1(gid: 100) args: &{OpType:Get Key:1 Value: ClientId:2944624721185117473 SeqId:1} reply: &{Err:OK Value:uQ282W6hnlStU3dq1UD5}
+001082 <Raft> [INFO] #2 replicate, term: 2
+001082 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 3096045288049262733 1 map[] [] 0 0 -1}
+001082 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 3152675238244803415 1 map[] [] 0 0 -1}
+001082 [INFO] #0(gid: 100) args: &{OpType:Get Key:9 Value: ClientId:563721849441650280 SeqId:1} reply: &{Err:ErrWrongLeader Value:}
+001083 <Raft> [INFO] #1 replicate, term: 1
+001083 [INFO] #1(gid: 100) args: &{OpType:Get Key:7 Value: ClientId:4459902802778554875 SeqId:1} reply: &{Err:OK Value:0vOFENBbQvAW2tq1D6Vq}
+001084 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 3152675238244803415 1 map[] [] 0 0 -1}
+001084 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 3096045288049262733 1 map[] [] 0 0 -1}
+001087 [INFO] #1(gid: 100) args: &{OpType:Get Key:8 Value: ClientId:3354685576350304229 SeqId:1} reply: &{Err:OK Value:4fET22XN-DthuTxwLUTg}
+001088 [INFO] #1(gid: 100) args: &{OpType:Get Key:9 Value: ClientId:563721849441650280 SeqId:1} reply: &{Err:OK Value:ElE0nSOwDxKqsrtIkV7O}
+001090 <Raft> [INFO] #2 replicate, term: 2
+001090 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 8 map[] [] 0 0 3}
+001090 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 3096045288049262733 1 map[] [] 0 0 -1}
+001090 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 8 map[] [] 0 0 3}
+001091 <Raft> [INFO] #2 replicate, term: 2
+001091 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 9 map[] [] 0 0 3}
+001091 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 8 map[] [] 0 0 3}
+001091 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 9 map[] [] 0 0 3}
+001094 <Raft> [INFO] #1 replicate, term: 2
+001141 <Raft> [INFO] #2 replicate, term: 2
+001141 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 9 map[] [] 0 0 3}
+001143 <Raft> [INFO] #2 replicate, term: 2
+001142 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 10 map[] [] 0 0 3}
+001143 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 9 map[] [] 0 0 3}
+001142 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 9 map[] [] 0 0 3}
+001143 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 9 map[] [] 0 0 3}
+001143 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 10 map[] [] 0 0 3}
+001161 <Raft> [INFO] #2 replicate, term: 2
+001161 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 10 map[] [] 0 0 3}
+001161 <Raft> [INFO] #1 replicate, term: 1
+001193 <Raft> [INFO] #2 replicate, term: 2
+001193 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 10 map[] [] 0 0 3}
+001193 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 10 map[] [] 0 0 3}
+001194 <Raft> [INFO] #2 replicate, term: 2
+001194 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 11 map[] [] 0 0 3}
+001194 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 10 map[] [] 0 0 3}
+001194 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 11 map[] [] 0 0 3}
+001195 <Raft> [INFO] #1 replicate, term: 2
+001244 <Raft> [INFO] #2 replicate, term: 2
+001244 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 11 map[] [] 0 0 3}
+001245 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 11 map[] [] 0 0 3}
+001245 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 11 map[] [] 0 0 3}
+001246 <Raft> [INFO] #2 replicate, term: 2
+001245 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 12 map[] [] 0 0 3}
+001246 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 12 map[] [] 0 0 3}
+001246 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 11 map[] [] 0 0 3}
+001262 <Raft> [INFO] #1 replicate, term: 1
+001262 <Raft> [INFO] #2 replicate, term: 2
+001262 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 12 map[] [] 0 0 3}
+001289 <Raft> [INFO] #2 replicate, term: 2
+001289 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 2 map[] [] 0 0 -1}
+001289 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 2 map[] [] 0 0 -1}
+001296 <Raft> [INFO] #2 replicate, term: 2
+001296 <Raft> [INFO] #1 replicate, term: 2
+001296 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 12 map[] [] 0 0 3}
+001297 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 2 map[] [] 0 0 -1}
+001297 <Raft> [INFO] #2 replicate, term: 2
+001297 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 13 map[] [] 0 0 3}
+001297 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 12 map[] [] 0 0 3}
+001298 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 12 map[] [] 0 0 3}
+001298 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 13 map[] [] 0 0 3}
+001323 <Raft> [INFO] #2 replicate, term: 2
+001323 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 2 map[] [] 0 0 -1}
+001324 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 13 map[] [] 0 0 3}
+001324 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 2 map[] [] 0 0 -1}
+001327 <Raft> [INFO] #2 replicate, term: 2
+001326 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 2 map[] [] 0 0 -1}
+001327 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 2 map[] [] 0 0 -1}
+001327 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 2 map[] [] 0 0 -1}
+001328 <Raft> [INFO] #2 replicate, term: 2
+001328 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 2 map[] [] 0 0 -1}
+001329 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 2 map[] [] 0 0 -1}
+001329 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 2 map[] [] 0 0 -1}
+001348 <Raft> [INFO] #2 replicate, term: 2
+001348 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 14 map[] [] 0 0 3}
+001349 <Raft> [INFO] #2 replicate, term: 2
+001349 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 2 map[] [] 0 0 -1}
+001349 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 14 map[] [] 0 0 3}
+001349 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 13 map[] [] 0 0 3}
+001350 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 14 map[] [] 0 0 3}
+001362 <Raft> [INFO] #1 replicate, term: 1
+001362 <Raft> [INFO] #2 replicate, term: 2
+001362 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 13 map[] [] 0 0 3}
+001362 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 13 map[] [] 0 0 3}
+001373 <Raft> [INFO] #2 replicate, term: 2
+001373 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 2 map[] [] 0 0 -1}
+001396 <Raft> [INFO] #1 replicate, term: 2
+001399 <Raft> [INFO] #2 replicate, term: 2
+001399 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 15 map[] [] 0 0 3}
+001399 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 2 map[] [] 0 0 -1}
+001400 <Raft> [INFO] #2 replicate, term: 2
+001400 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 14 map[] [] 0 0 3}
+001400 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 15 map[] [] 0 0 3}
+001401 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 2 map[] [] 0 0 -1}
+001401 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 15 map[] [] 0 0 3}
+001401 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 14 map[] [] 0 0 3}
+001451 <Raft> [INFO] #2 replicate, term: 2
+001451 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 16 map[] [] 0 0 3}
+001451 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 14 map[] [] 0 0 3}
+001452 <Raft> [INFO] #2 replicate, term: 2
+001452 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 16 map[] [] 0 0 3}
+001453 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 15 map[] [] 0 0 3}
+001453 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 16 map[] [] 0 0 3}
+001453 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 15 map[] [] 0 0 3}
+001462 <Raft> [INFO] #1 replicate, term: 1
+001462 <Raft> [INFO] #2 replicate, term: 2
+001462 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 15 map[] [] 0 0 3}
+001497 <Raft> [INFO] #1 replicate, term: 2
+001502 <Raft> [INFO] #2 replicate, term: 2
+001502 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 17 map[] [] 0 0 3}
+001503 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 17 map[] [] 0 0 3}
+001505 <Raft> [INFO] #2 replicate, term: 2
+001505 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 16 map[] [] 0 0 3}
+001505 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 17 map[] [] 0 0 3}
+001507 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 16 map[] [] 0 0 3}
+001542 <Raft> [INFO] #2 replicate, term: 2
+001542 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 3 map[] [] 0 0 -1}
+001542 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 16 map[] [] 0 0 3}
+001542 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 3 map[] [] 0 0 -1}
+001554 <Raft> [INFO] #2 replicate, term: 2
+001554 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 18 map[] [] 0 0 3}
+001555 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 3 map[] [] 0 0 -1}
+001555 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 18 map[] [] 0 0 3}
+001558 <Raft> [INFO] #2 replicate, term: 2
+001558 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 17 map[] [] 0 0 3}
+001558 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 18 map[] [] 0 0 3}
+001562 <Raft> [INFO] #1 replicate, term: 1
+001563 <Raft> [INFO] #2 replicate, term: 2
+001563 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 17 map[] [] 0 0 3}
+001563 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 17 map[] [] 0 0 3}
+001565 <Raft> [INFO] #2 replicate, term: 2
+001565 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 3 map[] [] 0 0 -1}
+001565 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 3 map[] [] 0 0 -1}
+001588 <Raft> [INFO] #2 replicate, term: 2
+001588 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 3 map[] [] 0 0 -1}
+001588 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 3 map[] [] 0 0 -1}
+001597 <Raft> [INFO] #1 replicate, term: 2
+001606 <Raft> [INFO] #2 replicate, term: 2
+001605 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 19 map[] [] 0 0 3}
+001606 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 3 map[] [] 0 0 -1}
+001606 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 3 map[] [] 0 0 -1}
+001606 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 19 map[] [] 0 0 3}
+001609 <Raft> [INFO] #2 replicate, term: 2
+001609 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 18 map[] [] 0 0 3}
+001609 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 19 map[] [] 0 0 3}
+001610 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 18 map[] [] 0 0 3}
+001612 <Raft> [INFO] #2 replicate, term: 2
+001613 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 3 map[] [] 0 0 -1}
+001614 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 18 map[] [] 0 0 3}
+001614 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 3 map[] [] 0 0 -1}
+001621 <Raft> [INFO] #2 replicate, term: 2
+001621 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 3 map[] [] 0 0 -1}
+001621 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 3 map[] [] 0 0 -1}
+001658 <Raft> [INFO] #2 replicate, term: 2
+001657 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 20 map[] [] 0 0 3}
+001658 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 3 map[] [] 0 0 -1}
+001658 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 3 map[] [] 0 0 -1}
+001658 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 20 map[] [] 0 0 3}
+001660 <Raft> [INFO] #2 replicate, term: 2
+001660 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 19 map[] [] 0 0 3}
+001660 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 20 map[] [] 0 0 3}
+001661 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 19 map[] [] 0 0 3}
+001662 <Raft> [INFO] #1 replicate, term: 1
+001663 <Raft> [INFO] #2 replicate, term: 2
+001663 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 19 map[] [] 0 0 3}
+001698 <Raft> [INFO] #1 replicate, term: 2
+001709 <Raft> [INFO] #2 replicate, term: 2
+001709 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 21 map[] [] 0 0 3}
+001712 <Raft> [INFO] #2 replicate, term: 2
+001712 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 20 map[] [] 0 0 3}
+001712 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 21 map[] [] 0 0 3}
+001712 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 21 map[] [] 0 0 3}
+001712 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 20 map[] [] 0 0 3}
+001760 <Raft> [INFO] #2 replicate, term: 2
+001760 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 22 map[] [] 0 0 3}
+001761 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 20 map[] [] 0 0 3}
+001761 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 22 map[] [] 0 0 3}
+001762 <Raft> [INFO] #1 replicate, term: 1
+001763 <Raft> [INFO] #2 replicate, term: 2
+001763 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 22 map[] [] 0 0 3}
+001764 <Raft> [INFO] #2 replicate, term: 2
+001764 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 21 map[] [] 0 0 3}
+001767 <Raft> [INFO] #2 replicate, term: 2
+001767 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 4 map[] [] 0 0 -1}
+001767 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 21 map[] [] 0 0 3}
+001767 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 21 map[] [] 0 0 3}
+001767 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 4 map[] [] 0 0 -1}
+001798 <Raft> [INFO] #1 replicate, term: 2
+001812 <Raft> [INFO] #2 replicate, term: 2
+001812 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 23 map[] [] 0 0 3}
+001812 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 4 map[] [] 0 0 -1}
+001817 <Raft> [INFO] #2 replicate, term: 2
+001816 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 22 map[] [] 0 0 3}
+001817 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 23 map[] [] 0 0 3}
+001817 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 23 map[] [] 0 0 3}
+001817 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 22 map[] [] 0 0 3}
+001855 <Raft> [INFO] #2 replicate, term: 2
+001855 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 4 map[] [] 0 0 -1}
+001857 <Raft> [INFO] #2 replicate, term: 2
+001856 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 4 map[] [] 0 0 -1}
+001856 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 22 map[] [] 0 0 3}
+001856 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 4 map[] [] 0 0 -1}
+001857 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 4 map[] [] 0 0 -1}
+001857 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 4 map[] [] 0 0 -1}
+001863 <Raft> [INFO] #2 replicate, term: 2
+001863 <Raft> [INFO] #1 replicate, term: 1
+001863 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 4 map[] [] 0 0 -1}
+001865 <Raft> [INFO] #2 replicate, term: 2
+001865 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 24 map[] [] 0 0 3}
+001866 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 24 map[] [] 0 0 3}
+001868 <Raft> [INFO] #2 replicate, term: 2
+001868 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 23 map[] [] 0 0 3}
+001869 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 24 map[] [] 0 0 3}
+001869 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 23 map[] [] 0 0 3}
+001874 <Raft> [INFO] #2 replicate, term: 2
+001874 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 4 map[] [] 0 0 -1}
+001874 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 23 map[] [] 0 0 3}
+001875 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 4 map[] [] 0 0 -1}
+001899 <Raft> [INFO] #1 replicate, term: 2
+001916 <Raft> [INFO] #2 replicate, term: 2
+001916 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 4 map[] [] 0 0 -1}
+001917 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 25 map[] [] 0 0 3}
+001917 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 25 map[] [] 0 0 3}
+001920 <Raft> [INFO] #2 replicate, term: 2
+001920 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 24 map[] [] 0 0 3}
+001921 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 25 map[] [] 0 0 3}
+001921 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 24 map[] [] 0 0 3}
+001943 <Raft> [INFO] #2 replicate, term: 2
+001943 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 5 map[] [] 0 0 -1}
+001943 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 24 map[] [] 0 0 3}
+001943 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 5 map[] [] 0 0 -1}
+001955 <Raft> [INFO] #2 replicate, term: 2
+001955 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 4 map[] [] 0 0 -1}
+001957 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 4 map[] [] 0 0 -1}
+001958 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 5 map[] [] 0 0 -1}
+001963 <Raft> [INFO] #2 replicate, term: 2
+001964 <Raft> [INFO] #1 replicate, term: 1
+001964 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 4 map[] [] 0 0 -1}
+001968 <Raft> [INFO] #2 replicate, term: 2
+001969 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 26 map[] [] 0 0 3}
+001969 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 26 map[] [] 0 0 3}
+001972 <Raft> [INFO] #2 replicate, term: 2
+001972 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 25 map[] [] 0 0 3}
+001972 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 26 map[] [] 0 0 3}
+001972 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 25 map[] [] 0 0 3}
+002000 <Raft> [INFO] #1 replicate, term: 2
+002020 <Raft> [INFO] #2 replicate, term: 2
+002020 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 27 map[] [] 0 0 3}
+002021 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 27 map[] [] 0 0 3}
+002021 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 25 map[] [] 0 0 3}
+002023 <Raft> [INFO] #2 replicate, term: 2
+002023 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 26 map[] [] 0 0 3}
+002023 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 27 map[] [] 0 0 3}
+002024 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 26 map[] [] 0 0 3}
+002064 <Raft> [INFO] #2 replicate, term: 2
+002065 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 26 map[] [] 0 0 3}
+002066 <Raft> [INFO] #1 replicate, term: 1
+002072 <Raft> [INFO] #2 replicate, term: 2
+002072 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 28 map[] [] 0 0 3}
+002074 <Raft> [INFO] #2 replicate, term: 2
+002074 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 27 map[] [] 0 0 3}
+002074 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 28 map[] [] 0 0 3}
+002074 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 28 map[] [] 0 0 3}
+002074 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 27 map[] [] 0 0 3}
+002092 <Raft> [INFO] #2 replicate, term: 2
+002092 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 6 map[] [] 0 0 -1}
+002092 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 27 map[] [] 0 0 3}
+002092 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 6 map[] [] 0 0 -1}
+002101 <Raft> [INFO] #1 replicate, term: 2
+002117 <Raft> [INFO] #2 replicate, term: 2
+002117 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 6 map[] [] 0 0 -1}
+002117 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 5 map[] [] 0 0 -1}
+002118 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 5 map[] [] 0 0 -1}
+002124 <Raft> [INFO] #2 replicate, term: 2
+002125 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 29 map[] [] 0 0 3}
+002125 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 5 map[] [] 0 0 -1}
+002126 <Raft> [INFO] #2 replicate, term: 2
+002126 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 29 map[] [] 0 0 3}
+002126 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 28 map[] [] 0 0 3}
+002126 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 29 map[] [] 0 0 3}
+002130 <Raft> [INFO] #2 replicate, term: 2
+002130 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 5 map[] [] 0 0 -1}
+002131 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 28 map[] [] 0 0 3}
+002131 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 28 map[] [] 0 0 3}
+002131 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 5 map[] [] 0 0 -1}
+002165 <Raft> [INFO] #2 replicate, term: 2
+002165 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 5 map[] [] 0 0 -1}
+002167 <Raft> [INFO] #1 replicate, term: 1
+002177 <Raft> [INFO] #2 replicate, term: 2
+002176 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 30 map[] [] 0 0 3}
+002177 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 30 map[] [] 0 0 3}
+002178 <Raft> [INFO] #2 replicate, term: 2
+002180 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 30 map[] [] 0 0 3}
+002180 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 29 map[] [] 0 0 3}
+002201 <Raft> [INFO] #1 replicate, term: 2
+002214 <Raft> [INFO] #2 replicate, term: 2
+002214 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 5 map[] [] 0 0 -1}
+002214 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 29 map[] [] 0 0 3}
+002214 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 29 map[] [] 0 0 3}
+002214 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 5 map[] [] 0 0 -1}
+002219 <Raft> [INFO] #2 replicate, term: 2
+002219 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 5 map[] [] 0 0 -1}
+002219 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 5 map[] [] 0 0 -1}
+002219 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 5 map[] [] 0 0 -1}
+002228 <Raft> [INFO] #2 replicate, term: 2
+002228 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 31 map[] [] 0 0 3}
+002228 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 5 map[] [] 0 0 -1}
+002228 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 31 map[] [] 0 0 3}
+002232 <Raft> [INFO] #2 replicate, term: 2
+002232 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 30 map[] [] 0 0 3}
+002232 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 31 map[] [] 0 0 3}
+002265 <Raft> [INFO] #2 replicate, term: 2
+002266 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 30 map[] [] 0 0 3}
+002266 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 30 map[] [] 0 0 3}
+002267 <Raft> [INFO] #1 replicate, term: 1
+002268 <Raft> [INFO] #2 replicate, term: 2
+002268 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 7 map[] [] 0 0 -1}
+002280 <Raft> [INFO] #2 replicate, term: 2
+002280 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 32 map[] [] 0 0 3}
+002280 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 7 map[] [] 0 0 -1}
+002280 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 7 map[] [] 0 0 -1}
+002280 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 32 map[] [] 0 0 3}
+002283 <Raft> [INFO] #2 replicate, term: 2
+002283 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 32 map[] [] 0 0 3}
+002284 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 31 map[] [] 0 0 3}
+002284 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 31 map[] [] 0 0 3}
+002302 <Raft> [INFO] #1 replicate, term: 2
+002332 <Raft> [INFO] #2 replicate, term: 2
+002333 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 33 map[] [] 0 0 3}
+002335 <Raft> [INFO] #2 replicate, term: 2
+002335 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 31 map[] [] 0 0 3}
+002335 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 33 map[] [] 0 0 3}
+002336 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 32 map[] [] 0 0 3}
+002336 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 33 map[] [] 0 0 3}
+002336 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 32 map[] [] 0 0 3}
+002366 <Raft> [INFO] #2 replicate, term: 2
+002367 <Raft> [INFO] #1 replicate, term: 1
+002366 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 32 map[] [] 0 0 3}
+002384 <Raft> [INFO] #2 replicate, term: 2
+002384 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 34 map[] [] 0 0 3}
+002385 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 34 map[] [] 0 0 3}
+002387 <Raft> [INFO] #2 replicate, term: 2
+002387 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 33 map[] [] 0 0 3}
+002387 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 34 map[] [] 0 0 3}
+002402 <Raft> [INFO] #1 replicate, term: 2
+002413 <Raft> [INFO] #2 replicate, term: 2
+002413 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 6 map[] [] 0 0 -1}
+002413 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 33 map[] [] 0 0 3}
+002413 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 33 map[] [] 0 0 3}
+002413 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 6 map[] [] 0 0 -1}
+002420 <Raft> [INFO] #2 replicate, term: 2
+002423 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 6 map[] [] 0 0 -1}
+002423 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 6 map[] [] 0 0 -1}
+002436 <Raft> [INFO] #2 replicate, term: 2
+002436 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 6 map[] [] 0 0 -1}
+002436 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 35 map[] [] 0 0 3}
+002436 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 6 map[] [] 0 0 -1}
+002436 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 35 map[] [] 0 0 3}
+002439 <Raft> [INFO] #2 replicate, term: 2
+002439 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 34 map[] [] 0 0 3}
+002440 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 35 map[] [] 0 0 3}
+002440 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 34 map[] [] 0 0 3}
+002463 <Raft> [INFO] #2 replicate, term: 2
+002463 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 6 map[] [] 0 0 -1}
+002463 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 34 map[] [] 0 0 3}
+002463 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 6 map[] [] 0 0 -1}
+002466 <Raft> [INFO] #2 replicate, term: 2
+002466 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 6 map[] [] 0 0 -1}
+002467 <Raft> [INFO] #1 replicate, term: 1
+002488 <Raft> [INFO] #2 replicate, term: 2
+002488 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 36 map[] [] 0 0 3}
+002489 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 36 map[] [] 0 0 3}
+002492 <Raft> [INFO] #2 replicate, term: 2
+002492 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 35 map[] [] 0 0 3}
+002492 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 36 map[] [] 0 0 3}
+002502 <Raft> [INFO] #1 replicate, term: 2
+002541 <Raft> [INFO] #2 replicate, term: 2
+002540 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 37 map[] [] 0 0 3}
+002541 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 35 map[] [] 0 0 3}
+002541 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 35 map[] [] 0 0 3}
+002541 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 37 map[] [] 0 0 3}
+002543 <Raft> [INFO] #2 replicate, term: 2
+002544 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 37 map[] [] 0 0 3}
+002544 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 6 map[] [] 0 0 -1}
+002545 <Raft> [INFO] #2 replicate, term: 2
+002545 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 36 map[] [] 0 0 3}
+002545 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 6 map[] [] 0 0 -1}
+002546 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 6 map[] [] 0 0 -1}
+002546 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 36 map[] [] 0 0 3}
+002566 <Raft> [INFO] #2 replicate, term: 2
+002568 <Raft> [INFO] #1 replicate, term: 1
+002569 <Raft> [INFO] #2 replicate, term: 2
+002569 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 7 map[] [] 0 0 -1}
+002569 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 36 map[] [] 0 0 3}
+002569 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 7 map[] [] 0 0 -1}
+002569 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 7 map[] [] 0 0 -1}
+002592 <Raft> [INFO] #2 replicate, term: 2
+002592 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 38 map[] [] 0 0 3}
+002592 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 38 map[] [] 0 0 3}
+002597 <Raft> [INFO] #2 replicate, term: 2
+002597 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 37 map[] [] 0 0 3}
+002597 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 38 map[] [] 0 0 3}
+002599 <Raft> [INFO] #2 replicate, term: 2
+002599 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 8 map[] [] 0 0 -1}
+002599 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 37 map[] [] 0 0 3}
+002599 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 37 map[] [] 0 0 3}
+002599 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 8 map[] [] 0 0 -1}
+002603 <Raft> [INFO] #1 replicate, term: 2
+002644 <Raft> [INFO] #2 replicate, term: 2
+002644 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 39 map[] [] 0 0 3}
+002645 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 8 map[] [] 0 0 -1}
+002645 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 39 map[] [] 0 0 3}
+002648 <Raft> [INFO] #2 replicate, term: 2
+002648 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 38 map[] [] 0 0 3}
+002648 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 39 map[] [] 0 0 3}
+002649 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 38 map[] [] 0 0 3}
+002668 <Raft> [INFO] #1 replicate, term: 1
+002669 <Raft> [INFO] #2 replicate, term: 2
+002669 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 38 map[] [] 0 0 3}
+002696 <Raft> [INFO] #2 replicate, term: 2
+002696 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 40 map[] [] 0 0 3}
+002701 <Raft> [INFO] #2 replicate, term: 2
+002703 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 39 map[] [] 0 0 3}
+002703 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 40 map[] [] 0 0 3}
+002703 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 40 map[] [] 0 0 3}
+002709 <Raft> [INFO] #1 replicate, term: 2
+002710 <Raft> [INFO] #2 replicate, term: 2
+002710 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 7 map[] [] 0 0 -1}
+002711 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 39 map[] [] 0 0 3}
+002711 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 39 map[] [] 0 0 3}
+002711 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 7 map[] [] 0 0 -1}
+002738 <Raft> [INFO] #2 replicate, term: 2
+002738 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 7 map[] [] 0 0 -1}
+002739 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 7 map[] [] 0 0 -1}
+002739 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 7 map[] [] 0 0 -1}
+002748 <Raft> [INFO] #2 replicate, term: 2
+002748 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 41 map[] [] 0 0 3}
+002749 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 7 map[] [] 0 0 -1}
+002755 <Raft> [INFO] #2 replicate, term: 2
+002755 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 40 map[] [] 0 0 3}
+002756 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 41 map[] [] 0 0 3}
+002756 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 41 map[] [] 0 0 3}
+002769 <Raft> [INFO] #2 replicate, term: 2
+002769 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 40 map[] [] 0 0 3}
+002770 <Raft> [INFO] #1 replicate, term: 1
+002770 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 40 map[] [] 0 0 3}
+002789 <Raft> [INFO] #2 replicate, term: 2
+002789 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 7 map[] [] 0 0 -1}
+002801 <Raft> [INFO] #2 replicate, term: 2
+002801 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 42 map[] [] 0 0 3}
+002803 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 7 map[] [] 0 0 -1}
+002803 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 7 map[] [] 0 0 -1}
+002803 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 42 map[] [] 0 0 3}
+002808 <Raft> [INFO] #2 replicate, term: 2
+002808 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 41 map[] [] 0 0 3}
+002808 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 42 map[] [] 0 0 3}
+002810 <Raft> [INFO] #1 replicate, term: 2
+002852 <Raft> [INFO] #2 replicate, term: 2
+002852 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 43 map[] [] 0 0 3}
+002853 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 41 map[] [] 0 0 3}
+002853 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 41 map[] [] 0 0 3}
+002853 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 43 map[] [] 0 0 3}
+002860 <Raft> [INFO] #2 replicate, term: 2
+002860 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 42 map[] [] 0 0 3}
+002860 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 43 map[] [] 0 0 3}
+002870 <Raft> [INFO] #2 replicate, term: 2
+002870 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 42 map[] [] 0 0 3}
+002870 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 42 map[] [] 0 0 3}
+002871 <Raft> [INFO] #1 replicate, term: 1
+002905 <Raft> [INFO] #2 replicate, term: 2
+002905 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 44 map[] [] 0 0 3}
+002905 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 44 map[] [] 0 0 3}
+002910 <Raft> [INFO] #1 replicate, term: 2
+002911 <Raft> [INFO] #2 replicate, term: 2
+002911 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 43 map[] [] 0 0 3}
+002913 <Raft> [INFO] #2 replicate, term: 2
+002913 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 43 map[] [] 0 0 3}
+002915 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 44 map[] [] 0 0 3}
+002916 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 43 map[] [] 0 0 3}
+002916 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 9 map[] [] 0 0 -1}
+002920 <Raft> [INFO] #2 replicate, term: 2
+002920 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 8 map[] [] 0 0 -1}
+002920 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 9 map[] [] 0 0 -1}
+002920 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 9 map[] [] 0 0 -1}
+002920 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 8 map[] [] 0 0 -1}
+002927 <Raft> [INFO] #2 replicate, term: 2
+002927 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 8 map[] [] 0 0 -1}
+002927 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 8 map[] [] 0 0 -1}
+002928 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 8 map[] [] 0 0 -1}
+002957 <Raft> [INFO] #2 replicate, term: 2
+002957 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 8 map[] [] 0 0 -1}
+002957 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 45 map[] [] 0 0 3}
+002963 <Raft> [INFO] #2 replicate, term: 2
+002963 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 44 map[] [] 0 0 3}
+002963 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 45 map[] [] 0 0 3}
+002963 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 45 map[] [] 0 0 3}
+002963 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 44 map[] [] 0 0 3}
+002970 <Raft> [INFO] #2 replicate, term: 2
+002971 <Raft> [INFO] #1 replicate, term: 1
+002971 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 44 map[] [] 0 0 3}
+003009 <Raft> [INFO] #2 replicate, term: 2
+003009 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 46 map[] [] 0 0 3}
+003010 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 46 map[] [] 0 0 3}
+003011 <Raft> [INFO] #1 replicate, term: 2
+003014 <Raft> [INFO] #2 replicate, term: 2
+003014 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 45 map[] [] 0 0 3}
+003015 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 46 map[] [] 0 0 3}
+003015 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 45 map[] [] 0 0 3}
+003016 <Raft> [INFO] #2 replicate, term: 2
+003016 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 8 map[] [] 0 0 -1}
+003017 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 45 map[] [] 0 0 3}
+003017 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 8 map[] [] 0 0 -1}
+003018 <Raft> [INFO] #2 replicate, term: 2
+003019 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 8 map[] [] 0 0 -1}
+003019 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 8 map[] [] 0 0 -1}
+003061 <Raft> [INFO] #2 replicate, term: 2
+003061 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 47 map[] [] 0 0 3}
+003062 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 8 map[] [] 0 0 -1}
+003062 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 8 map[] [] 0 0 -1}
+003062 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 47 map[] [] 0 0 3}
+003067 <Raft> [INFO] #2 replicate, term: 2
+003067 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 46 map[] [] 0 0 3}
+003067 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 46 map[] [] 0 0 3}
+003068 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 47 map[] [] 0 0 3}
+003070 <Raft> [INFO] #2 replicate, term: 2
+003071 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 46 map[] [] 0 0 3}
+003071 <Raft> [INFO] #1 replicate, term: 1
+003089 [INFO] #0(gid: 100) args: &{OpType:Get Key:0 Value: ClientId:1663639798575742122 SeqId:21} reply: &{Err:ErrWrongLeader Value:}
+003090 <Raft> [INFO] #1 replicate, term: 1
+003101 [INFO] #1(gid: 100) args: &{OpType:Get Key:0 Value: ClientId:1663639798575742122 SeqId:21} reply: &{Err:OK Value:WMvEiNHJqOB8Q7RGjNeU}
+003101 [INFO] #0(gid: 100) args: &{OpType:Get Key:1 Value: ClientId:1663639798575742122 SeqId:22} reply: &{Err:ErrWrongLeader Value:}
+003102 <Raft> [INFO] #1 replicate, term: 1
+003106 [INFO] #1(gid: 100) args: &{OpType:Get Key:1 Value: ClientId:1663639798575742122 SeqId:22} reply: &{Err:OK Value:uQ282W6hnlStU3dq1UD5}
+003106 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003106 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:23} reply: &{Err:ErrWrongGroup Value:}
+003107 [WARN] #1(gid: 101) shard 3 is <nil>, can't servering(0)
+003107 [INFO] #1(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:4264457091510213128 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003111 <Raft> [INFO] #1 replicate, term: 2
+003113 <Raft> [INFO] #2 replicate, term: 2
+003113 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 48 map[] [] 0 0 3}
+003114 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 48 map[] [] 0 0 3}
+003118 <Raft> [INFO] #2 replicate, term: 2
+003118 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 47 map[] [] 0 0 3}
+003119 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 47 map[] [] 0 0 3}
+003119 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 48 map[] [] 0 0 3}
+003120 [WARN] #2(gid: 101) shard 0 is <nil>, can't servering(0)
+003120 [INFO] #2(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:4606642798306631074 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003165 <Raft> [INFO] #2 replicate, term: 2
+003165 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 49 map[] [] 0 0 3}
+003166 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 47 map[] [] 0 0 3}
+003166 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 49 map[] [] 0 0 3}
+003171 <Raft> [INFO] #2 replicate, term: 2
+003171 <Raft> [INFO] #2 replicate, term: 2
+003171 <Raft> [INFO] #1 replicate, term: 1
+003171 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 48 map[] [] 0 0 3}
+003172 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 49 map[] [] 0 0 3}
+003186 <Raft> [INFO] #2 replicate, term: 2
+003187 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 48 map[] [] 0 0 3}
+003187 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 9 map[] [] 0 0 -1}
+003188 [WARN] #0(gid: 101) shard 2 is <nil>, can't servering(0)
+003188 [INFO] #0(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:2882850476976646820 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003189 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 48 map[] [] 0 0 3}
+003189 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 9 map[] [] 0 0 -1}
+003196 <Raft> [INFO] #2 replicate, term: 2
+003197 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 9 map[] [] 0 0 -1}
+003197 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 9 map[] [] 0 0 -1}
+003197 [WARN] #0(gid: 101) shard 4 is <nil>, can't servering(0)
+003197 [INFO] #0(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:573848539232962181 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003198 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 9 map[] [] 0 0 -1}
+003208 <Raft> [INFO] #2 replicate, term: 2
+003209 <Raft> [INFO] #2 replicate, term: 2
+003209 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 7 map[] [] 0 0 -1}
+003209 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 9 map[] [] 0 0 -1}
+003209 [WARN] #0(gid: 101) shard 3 is <nil>, can't servering(0)
+003209 [INFO] #0(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:4264457091510213128 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003209 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 9 map[] [] 0 0 -1}
+003209 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003209 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:23} reply: &{Err:ErrWrongGroup Value:}
+003211 <Raft> [INFO] #1 replicate, term: 2
+003218 <Raft> [INFO] #2 replicate, term: 2
+003218 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 50 map[] [] 0 0 3}
+003218 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 7 map[] [] 0 0 -1}
+003218 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 9 map[] [] 0 0 -1}
+003218 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 7 map[] [] 0 0 -1}
+003218 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 9 map[] [] 0 0 -1}
+003218 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 50 map[] [] 0 0 3}
+003222 <Raft> [INFO] #2 replicate, term: 2
+003223 <Raft> [INFO] #2 replicate, term: 2
+003223 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 50 map[] [] 0 0 3}
+003223 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 9 map[] [] 0 0 -1}
+003223 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 9 map[] [] 0 0 -1}
+003223 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 49 map[] [] 0 0 3}
+003223 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 9 map[] [] 0 0 -1}
+003223 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 49 map[] [] 0 0 3}
+003224 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003224 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:4606642798306631074 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003229 <Raft> [INFO] #2 replicate, term: 2
+003229 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 10 map[] [] 0 0 -1}
+003229 [WARN] #0(gid: 101) shard 1 is <nil>, can't servering(0)
+003229 [INFO] #0(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:2769777908612964112 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003232 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 49 map[] [] 0 0 3}
+003232 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 10 map[] [] 0 0 -1}
+003269 <Raft> [INFO] #2 replicate, term: 2
+003269 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 51 map[] [] 0 0 3}
+003269 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 10 map[] [] 0 0 -1}
+003269 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 51 map[] [] 0 0 3}
+003271 <Raft> [INFO] #1 replicate, term: 1
+003271 <Raft> [INFO] #2 replicate, term: 2
+003272 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 51 map[] [] 0 0 3}
+003275 <Raft> [INFO] #2 replicate, term: 2
+003276 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 50 map[] [] 0 0 3}
+003276 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 50 map[] [] 0 0 3}
+003290 <Raft> [INFO] #2 replicate, term: 2
+003290 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 50 map[] [] 0 0 3}
+003291 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 10 map[] [] 0 0 -1}
+003291 [WARN] #0(gid: 101) shard 2 is <nil>, can't servering(0)
+003291 [INFO] #0(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:2882850476976646820 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003299 <Raft> [INFO] #2 replicate, term: 2
+003299 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 10 map[] [] 0 0 -1}
+003299 [WARN] #0(gid: 101) shard 4 is <nil>, can't servering(0)
+003299 [INFO] #0(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:573848539232962181 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003300 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 10 map[] [] 0 0 -1}
+003300 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 10 map[] [] 0 0 -1}
+003300 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 10 map[] [] 0 0 -1}
+003311 <Raft> [INFO] #2 replicate, term: 2
+003311 <Raft> [INFO] #1 replicate, term: 2
+003312 <Raft> [INFO] #2 replicate, term: 2
+003312 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 8 map[] [] 0 0 -1}
+003312 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 10 map[] [] 0 0 -1}
+003312 [WARN] #0(gid: 101) shard 3 is <nil>, can't servering(0)
+003312 [INFO] #0(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:4264457091510213128 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003315 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 8 map[] [] 0 0 -1}
+003315 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 10 map[] [] 0 0 -1}
+003316 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003316 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:23} reply: &{Err:ErrWrongGroup Value:}
+003316 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 10 map[] [] 0 0 -1}
+003321 <Raft> [INFO] #2 replicate, term: 2
+003321 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 8 map[] [] 0 0 -1}
+003321 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 10 map[] [] 0 0 -1}
+003321 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 52 map[] [] 0 0 3}
+003322 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 52 map[] [] 0 0 3}
+003325 <Raft> [INFO] #2 replicate, term: 2
+003325 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 10 map[] [] 0 0 -1}
+003325 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003325 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:4606642798306631074 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003326 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 52 map[] [] 0 0 3}
+003327 <Raft> [INFO] #2 replicate, term: 2
+003327 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 10 map[] [] 0 0 -1}
+003328 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 10 map[] [] 0 0 -1}
+003328 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 51 map[] [] 0 0 3}
+003328 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 51 map[] [] 0 0 3}
+003332 <Raft> [INFO] #2 replicate, term: 2
+003332 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 11 map[] [] 0 0 -1}
+003332 [WARN] #0(gid: 101) shard 1 is <nil>, can't servering(0)
+003332 [INFO] #0(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:2769777908612964112 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003333 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 51 map[] [] 0 0 3}
+003333 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 11 map[] [] 0 0 -1}
+003372 <Raft> [INFO] #2 replicate, term: 2
+003373 <Raft> [INFO] #2 replicate, term: 2
+003374 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 11 map[] [] 0 0 -1}
+003374 <Raft> [INFO] #1 replicate, term: 1
+003374 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 53 map[] [] 0 0 3}
+003377 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 53 map[] [] 0 0 3}
+003379 <Raft> [INFO] #2 replicate, term: 2
+003379 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 52 map[] [] 0 0 3}
+003380 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 52 map[] [] 0 0 3}
+003380 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 53 map[] [] 0 0 3}
+003393 <Raft> [INFO] #2 replicate, term: 2
+003393 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 11 map[] [] 0 0 -1}
+003394 [WARN] #0(gid: 101) shard 2 is <nil>, can't servering(0)
+003394 [INFO] #0(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:2882850476976646820 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003394 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 52 map[] [] 0 0 3}
+003401 <Raft> [INFO] #2 replicate, term: 2
+003401 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 11 map[] [] 0 0 -1}
+003402 [WARN] #0(gid: 101) shard 4 is <nil>, can't servering(0)
+003402 [INFO] #0(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:573848539232962181 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003402 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 11 map[] [] 0 0 -1}
+003402 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 11 map[] [] 0 0 -1}
+003402 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 11 map[] [] 0 0 -1}
+003412 <Raft> [INFO] #1 replicate, term: 2
+003413 <Raft> [INFO] #2 replicate, term: 2
+003413 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 11 map[] [] 0 0 -1}
+003413 [WARN] #0(gid: 101) shard 3 is <nil>, can't servering(0)
+003413 [INFO] #0(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:4264457091510213128 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003414 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 11 map[] [] 0 0 -1}
+003414 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 11 map[] [] 0 0 -1}
+003420 <Raft> [INFO] #2 replicate, term: 2
+003424 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 9 map[] [] 0 0 -1}
+003424 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003424 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:23} reply: &{Err:ErrWrongGroup Value:}
+003425 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 11 map[] [] 0 0 -1}
+003428 <Raft> [INFO] #2 replicate, term: 2
+003432 <Raft> [INFO] #2 replicate, term: 2
+003432 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 11 map[] [] 0 0 -1}
+003432 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 53 map[] [] 0 0 3}
+003434 <Raft> [INFO] #2 replicate, term: 2
+003434 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 9 map[] [] 0 0 -1}
+003434 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 11 map[] [] 0 0 -1}
+003434 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 53 map[] [] 0 0 3}
+003435 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 9 map[] [] 0 0 -1}
+003436 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 12 map[] [] 0 0 -1}
+003436 [WARN] #0(gid: 101) shard 1 is <nil>, can't servering(0)
+003436 [INFO] #0(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:2769777908612964112 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003437 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003437 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:4606642798306631074 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003438 <Raft> [INFO] #2 replicate, term: 2
+003438 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 54 map[] [] 0 0 3}
+003438 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 11 map[] [] 0 0 -1}
+003438 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 53 map[] [] 0 0 3}
+003439 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 12 map[] [] 0 0 -1}
+003439 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 12 map[] [] 0 0 -1}
+003439 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 54 map[] [] 0 0 3}
+003473 <Raft> [INFO] #2 replicate, term: 2
+003473 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 54 map[] [] 0 0 3}
+003475 <Raft> [INFO] #1 replicate, term: 1
+003487 <Raft> [INFO] #2 replicate, term: 2
+003488 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 54 map[] [] 0 0 3}
+003488 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 54 map[] [] 0 0 3}
+003492 <Raft> [INFO] #2 replicate, term: 2
+003492 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 55 map[] [] 0 0 3}
+003493 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 54 map[] [] 0 0 3}
+003495 <Raft> [INFO] #2 replicate, term: 2
+003496 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 55 map[] [] 0 0 3}
+003496 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 12 map[] [] 0 0 -1}
+003496 [WARN] #0(gid: 101) shard 2 is <nil>, can't servering(0)
+003496 [INFO] #0(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:2882850476976646820 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003496 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 55 map[] [] 0 0 3}
+003496 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 12 map[] [] 0 0 -1}
+003503 <Raft> [INFO] #2 replicate, term: 2
+003504 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 12 map[] [] 0 0 -1}
+003504 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 12 map[] [] 0 0 -1}
+003504 [WARN] #0(gid: 101) shard 4 is <nil>, can't servering(0)
+003504 [INFO] #0(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:573848539232962181 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003505 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 12 map[] [] 0 0 -1}
+003512 <Raft> [INFO] #1 replicate, term: 2
+003516 <Raft> [INFO] #2 replicate, term: 2
+003516 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 12 map[] [] 0 0 -1}
+003516 [WARN] #0(gid: 101) shard 3 is <nil>, can't servering(0)
+003516 [INFO] #0(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:4264457091510213128 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003517 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 12 map[] [] 0 0 -1}
+003517 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 12 map[] [] 0 0 -1}
+003526 <Raft> [INFO] #2 replicate, term: 2
+003526 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 10 map[] [] 0 0 -1}
+003526 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003526 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:23} reply: &{Err:ErrWrongGroup Value:}
+003528 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 10 map[] [] 0 0 -1}
+003528 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 12 map[] [] 0 0 -1}
+003538 <Raft> [INFO] #2 replicate, term: 2
+003538 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 13 map[] [] 0 0 -1}
+003538 [WARN] #0(gid: 101) shard 1 is <nil>, can't servering(0)
+003538 [INFO] #0(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:2769777908612964112 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003539 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 10 map[] [] 0 0 -1}
+003540 <Raft> [INFO] #2 replicate, term: 2
+003541 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 12 map[] [] 0 0 -1}
+003541 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003541 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:4606642798306631074 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003541 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 13 map[] [] 0 0 -1}
+003541 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 13 map[] [] 0 0 -1}
+003541 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 12 map[] [] 0 0 -1}
+003543 <Raft> [INFO] #2 replicate, term: 2
+003543 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 55 map[] [] 0 0 3}
+003544 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 12 map[] [] 0 0 -1}
+003544 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 55 map[] [] 0 0 3}
+003545 <Raft> [INFO] #2 replicate, term: 2
+003545 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 56 map[] [] 0 0 3}
+003546 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 56 map[] [] 0 0 3}
+003546 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 55 map[] [] 0 0 3}
+003574 <Raft> [INFO] #2 replicate, term: 2
+003574 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 56 map[] [] 0 0 3}
+003576 <Raft> [INFO] #1 replicate, term: 1
+003596 <Raft> [INFO] #2 replicate, term: 2
+003598 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 56 map[] [] 0 0 3}
+003599 <Raft> [INFO] #2 replicate, term: 2
+003599 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 13 map[] [] 0 0 -1}
+003600 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 56 map[] [] 0 0 3}
+003601 <Raft> [INFO] #2 replicate, term: 2
+003601 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 57 map[] [] 0 0 3}
+003601 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 13 map[] [] 0 0 -1}
+003602 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 56 map[] [] 0 0 3}
+003602 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 13 map[] [] 0 0 -1}
+003602 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 57 map[] [] 0 0 3}
+003602 [WARN] #0(gid: 101) shard 2 is <nil>, can't servering(0)
+003602 [INFO] #0(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:2882850476976646820 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003608 <Raft> [INFO] #2 replicate, term: 2
+003608 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 13 map[] [] 0 0 -1}
+003609 [WARN] #0(gid: 101) shard 4 is <nil>, can't servering(0)
+003609 [INFO] #0(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:573848539232962181 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003610 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 13 map[] [] 0 0 -1}
+003610 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 57 map[] [] 0 0 3}
+003612 <Raft> [INFO] #1 replicate, term: 2
+003618 <Raft> [INFO] #2 replicate, term: 2
+003618 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 13 map[] [] 0 0 -1}
+003618 [WARN] #0(gid: 101) shard 3 is <nil>, can't servering(0)
+003618 [INFO] #0(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:4264457091510213128 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003619 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 13 map[] [] 0 0 -1}
+003619 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 13 map[] [] 0 0 -1}
+003628 <Raft> [INFO] #2 replicate, term: 2
+003630 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 11 map[] [] 0 0 -1}
+003630 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003630 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:23} reply: &{Err:ErrWrongGroup Value:}
+003631 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 13 map[] [] 0 0 -1}
+003641 <Raft> [INFO] #2 replicate, term: 2
+003641 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 14 map[] [] 0 0 -1}
+003641 [WARN] #0(gid: 101) shard 1 is <nil>, can't servering(0)
+003641 [INFO] #0(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:2769777908612964112 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003642 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 11 map[] [] 0 0 -1}
+003642 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 11 map[] [] 0 0 -1}
+003642 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 14 map[] [] 0 0 -1}
+003643 <Raft> [INFO] #2 replicate, term: 2
+003644 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 13 map[] [] 0 0 -1}
+003644 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003644 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:4606642798306631074 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003644 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 14 map[] [] 0 0 -1}
+003650 <Raft> [INFO] #2 replicate, term: 2
+003650 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 57 map[] [] 0 0 3}
+003651 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 13 map[] [] 0 0 -1}
+003652 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 13 map[] [] 0 0 -1}
+003654 <Raft> [INFO] #2 replicate, term: 2
+003655 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 58 map[] [] 0 0 3}
+003655 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 57 map[] [] 0 0 3}
+003655 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 57 map[] [] 0 0 3}
+003655 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 58 map[] [] 0 0 3}
+003674 <Raft> [INFO] #2 get vote form #1, &{3 true}
+003674 <Raft> [IMPORTANT] #2 be leader, Term: 3
+003674 <Raft> [INFO] #2 replicate, term: 3
+003674 <Raft> [INFO] #1 get vote form #0, &{4 true}
+003675 <Raft> [IMPORTANT] #1 be leader, Term: 4
+003675 <Raft> [INFO] #1 replicate, term: 4
+003674 <Raft> [INFO] #2 replicate, term: 2
+003676 <Raft> [INFO] #1 replicate, term: 1
+003676 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 58 map[] [] 0 0 3}
+003696 <Raft> [INFO] #2 replicate, term: 2
+003696 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1699893556917021357 1 map[] [] 0 0 1}
+003697 <Raft> [INFO] #1 replicate, term: 4
+003698 [WARN] #1(gid: 101) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+003698 [WARN] #1(gid: 101) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003698 [SEVER] #1(gid: 101) before applyInsertShards: map[0:0xc000345638 1:0xc000345650 2:0xc000345668 3:0xc000345680 4:0xc000345698]
+003698 [SEVER] #1(gid: 101) after applyInsertShards: map[0:0xc0003456e0 1:0xc0003456f8 2:0xc000345710 3:0xc000345728 4:0xc000345740]
+003702 <Raft> [INFO] #2 replicate, term: 2
+003702 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 58 map[] [] 0 0 3}
+003703 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1699893556917021357 1 map[] [] 0 0 1}
+003703 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1699893556917021357 1 map[] [] 0 0 1}
+003703 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 58 map[] [] 0 0 3}
+003705 <Raft> [INFO] #2 replicate, term: 2
+003707 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 58 map[] [] 0 0 3}
+003708 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 14 map[] [] 0 0 -1}
+003708 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 14 map[] [] 0 0 -1}
+003708 [WARN] #0(gid: 101) shard 2 is <nil>, can't servering(0)
+003708 [INFO] #0(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:2882850476976646820 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003709 <Raft> [INFO] #2 replicate, term: 2
+003709 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 59 map[] [] 0 0 3}
+003712 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 59 map[] [] 0 0 3}
+003713 <Raft> [INFO] #1 replicate, term: 2
+003715 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 14 map[] [] 0 0 -1}
+003716 <Raft> [INFO] #2 replicate, term: 2
+003717 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 14 map[] [] 0 0 -1}
+003717 [WARN] #0(gid: 101) shard 4 is <nil>, can't servering(0)
+003717 [INFO] #0(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:573848539232962181 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003717 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 59 map[] [] 0 0 3}
+003720 <Raft> [INFO] #2 replicate, term: 2
+003721 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 14 map[] [] 0 0 -1}
+003721 [WARN] #0(gid: 101) shard 3 is <nil>, can't servering(0)
+003721 [INFO] #0(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:4264457091510213128 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003721 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 14 map[] [] 0 0 -1}
+003721 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 14 map[] [] 0 0 -1}
+003732 <Raft> [INFO] #2 replicate, term: 2
+003733 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 12 map[] [] 0 0 -1}
+003733 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003733 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:23} reply: &{Err:ErrWrongGroup Value:}
+003736 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 14 map[] [] 0 0 -1}
+003736 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 14 map[] [] 0 0 -1}
+003743 <Raft> [INFO] #2 replicate, term: 2
+003743 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 15 map[] [] 0 0 -1}
+003744 [WARN] #0(gid: 101) shard 1 is <nil>, can't servering(0)
+003744 [INFO] #0(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:2769777908612964112 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003745 <Raft> [INFO] #2 replicate, term: 2
+003745 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 14 map[] [] 0 0 -1}
+003745 [WARN] #0(gid: 101) shard 0 is <nil>, can't servering(0)
+003745 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:4606642798306631074 SeqId:1} reply: &{Err:ErrWrongGroup Value:}
+003746 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 12 map[] [] 0 0 -1}
+003746 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 15 map[] [] 0 0 -1}
+003746 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 12 map[] [] 0 0 -1}
+003746 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 15 map[] [] 0 0 -1}
+003747 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 14 map[] [] 0 0 -1}
+003755 <Raft> [INFO] #2 replicate, term: 2
+003755 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 59 map[] [] 0 0 3}
+003756 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 59 map[] [] 0 0 3}
+003756 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 14 map[] [] 0 0 -1}
+003761 <Raft> [INFO] #2 replicate, term: 2
+003762 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 59 map[] [] 0 0 3}
+003762 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 60 map[] [] 0 0 3}
+003762 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 60 map[] [] 0 0 3}
+003765 <Raft> [INFO] #2 replicate, term: 2
+003767 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1699893556917021357 2 map[] [] 0 0 3}
+003768 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 60 map[] [] 0 0 3}
+003775 <Raft> [INFO] #1 replicate, term: 4
+003776 <Raft> [INFO] #2 replicate, term: 2
+003775 [WARN] #2(gid: 101) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+003775 [WARN] #2(gid: 101) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003775 [SEVER] #2(gid: 101) before applyInsertShards: map[0:0xc000446330 1:0xc000446348 2:0xc000446360 3:0xc000446390 4:0xc0004463a8]
+003775 [SEVER] #2(gid: 101) after applyInsertShards: map[0:0xc000446420 1:0xc000446438 2:0xc000446450 3:0xc0004463f0 4:0xc000446408]
+003776 <Raft> [INFO] #1 replicate, term: 1
+003777 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1699893556917021357 2 map[] [] 0 0 3}
+003777 [WARN] #0(gid: 101) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+003777 [WARN] #0(gid: 101) applyConfiguration 2 is &{Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003777 [SEVER] #0(gid: 101) before applyInsertShards: map[0:0xc0001d9530 1:0xc0001d9548 2:0xc0001d9560 3:0xc0001d9578 4:0xc0001d9590]
+003777 [SEVER] #0(gid: 101) after applyInsertShards: map[0:0xc0001d9620 1:0xc0001d9638 2:0xc0001d95d8 3:0xc0001d95f0 4:0xc0001d9608]
+003777 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1699893556917021357 2 map[] [] 0 0 3}
+003806 <Raft> [INFO] #2 replicate, term: 2
+003806 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 60 map[] [] 0 0 3}
+003807 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 60 map[] [] 0 0 3}
+003811 <Raft> [INFO] #2 replicate, term: 2
+003811 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 732332642327699804 15 map[] [] 0 0 -1}
+003812 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 60 map[] [] 0 0 3}
+003811 [INFO] #0(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:2882850476976646820 SeqId:1} reply: &{Err:ErrWrongLeader Value:}
+003812 <Raft> [INFO] #1 replicate, term: 4
+003816 <Raft> [INFO] #2 replicate, term: 2
+003816 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 61 map[] [] 0 0 3}
+003817 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 732332642327699804 15 map[] [] 0 0 -1}
+003816 <Raft> [INFO] #1 replicate, term: 2
+003817 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 732332642327699804 15 map[] [] 0 0 -1}
+003817 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 61 map[] [] 0 0 3}
+003819 <Raft> [INFO] #2 replicate, term: 2
+003819 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1699893556917021357 3 map[] [] 0 0 3}
+003819 [INFO] #1(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:2882850476976646820 SeqId:1} reply: &{Err:OK Value:vrIox3wXFiWkKsA_aQWb}
+003821 <Raft> [INFO] #2 replicate, term: 2
+003821 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1699893556917021357 3 map[] [] 0 0 3}
+003821 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4127084160923310048 15 map[] [] 0 0 -1}
+003821 [INFO] #0(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:573848539232962181 SeqId:1} reply: &{Err:ErrWrongLeader Value:}
+003822 <Raft> [INFO] #1 replicate, term: 4
+003824 <Raft> [INFO] #2 replicate, term: 2
+003824 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1716464637402210311 15 map[] [] 0 0 -1}
+003824 [INFO] #0(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:4264457091510213128 SeqId:1} reply: &{Err:ErrWrongLeader Value:}
+003825 <Raft> [INFO] #1 replicate, term: 4
+003824 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 61 map[] [] 0 0 3}
+003824 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1699893556917021357 3 map[] [] 0 0 3}
+003824 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4127084160923310048 15 map[] [] 0 0 -1}
+003824 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1716464637402210311 15 map[] [] 0 0 -1}
+003825 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4127084160923310048 15 map[] [] 0 0 -1}
+003827 [INFO] #1(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:573848539232962181 SeqId:1} reply: &{Err:OK Value:9lUJ0RTyDjvoyQ--rXaE}
+003829 [INFO] #1(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:4264457091510213128 SeqId:1} reply: &{Err:OK Value:Q1UXrJILAmuHaUmSoQqm}
+003837 <Raft> [INFO] #2 replicate, term: 2
+003837 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4433385571411261705 13 map[] [] 0 0 -1}
+003837 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:23} reply: &{Err:ErrWrongLeader Value:}
+003838 <Raft> [INFO] #1 replicate, term: 4
+003839 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1716464637402210311 15 map[] [] 0 0 -1}
+003839 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4433385571411261705 13 map[] [] 0 0 -1}
+003843 [INFO] #1(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:1663639798575742122 SeqId:23} reply: &{Err:OK Value:i8N_MAwHrvmovs1FDSEF}
+003843 [INFO] #0(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:1663639798575742122 SeqId:24} reply: &{Err:ErrWrongLeader Value:}
+003844 <Raft> [INFO] #1 replicate, term: 4
+003845 <Raft> [INFO] #2 replicate, term: 2
+003845 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2014688242435020145 16 map[] [] 0 0 -1}
+003845 [INFO] #0(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:2769777908612964112 SeqId:1} reply: &{Err:ErrWrongLeader Value:}
+003847 <Raft> [INFO] #2 replicate, term: 2
+003847 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 2867196297562866914 15 map[] [] 0 0 -1}
+003847 [INFO] #0(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:4606642798306631074 SeqId:1} reply: &{Err:ErrWrongLeader Value:}
+003848 <Raft> [INFO] #1 replicate, term: 4
+003848 <Raft> [INFO] #1 replicate, term: 4
+003848 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4433385571411261705 13 map[] [] 0 0 -1}
+003848 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2014688242435020145 16 map[] [] 0 0 -1}
+003848 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2014688242435020145 16 map[] [] 0 0 -1}
+003848 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 2867196297562866914 15 map[] [] 0 0 -1}
+003848 [INFO] #1(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:1663639798575742122 SeqId:24} reply: &{Err:OK Value:8njUjkhAJDFAolmGF-oT}
+003849 [INFO] #0(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:1663639798575742122 SeqId:25} reply: &{Err:ErrWrongLeader Value:}
+003849 <Raft> [INFO] #1 replicate, term: 4
+003853 [INFO] #1(gid: 101) args: &{OpType:Get Key:3 Value: ClientId:2769777908612964112 SeqId:1} reply: &{Err:OK Value:8njUjkhAJDFAolmGF-oT}
+003854 [INFO] #1(gid: 101) args: &{OpType:Get Key:4 Value: ClientId:1663639798575742122 SeqId:25} reply: &{Err:OK Value:vrIox3wXFiWkKsA_aQWb}
+003855 [INFO] #0(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:1663639798575742122 SeqId:26} reply: &{Err:ErrWrongLeader Value:}
+003855 <Raft> [INFO] #1 replicate, term: 4
+003858 <Raft> [INFO] #2 replicate, term: 2
+003858 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 361032839193484675 61 map[] [] 0 0 3}
+003859 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 2867196297562866914 15 map[] [] 0 0 -1}
+003859 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 361032839193484675 61 map[] [] 0 0 3}
+003859 [INFO] #1(gid: 101) args: &{OpType:Get Key:2 Value: ClientId:4606642798306631074 SeqId:1} reply: &{Err:OK Value:i8N_MAwHrvmovs1FDSEF}
+003860 [INFO] #1(gid: 101) args: &{OpType:Get Key:5 Value: ClientId:1663639798575742122 SeqId:26} reply: &{Err:OK Value:Q1UXrJILAmuHaUmSoQqm}
+003860 [INFO] #0(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:1663639798575742122 SeqId:27} reply: &{Err:ErrWrongLeader Value:}
+003861 <Raft> [INFO] #1 replicate, term: 4
+003866 [INFO] #1(gid: 101) args: &{OpType:Get Key:6 Value: ClientId:1663639798575742122 SeqId:27} reply: &{Err:OK Value:9lUJ0RTyDjvoyQ--rXaE}
+003866 [INFO] #0(gid: 100) args: &{OpType:Get Key:7 Value: ClientId:1663639798575742122 SeqId:28} reply: &{Err:ErrWrongLeader Value:}
+003866 <Raft> [INFO] #1 replicate, term: 1
+003868 <Raft> [INFO] #2 replicate, term: 2
+003868 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 4449414238792481324 62 map[] [] 0 0 3}
+003870 <Raft> [INFO] #2 replicate, term: 2
+003870 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 361032839193484675 61 map[] [] 0 0 3}
+003870 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1699893556917021357 4 map[] [] 0 0 3}
+003871 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 4449414238792481324 62 map[] [] 0 0 3}
+003871 [INFO] #1(gid: 100) args: &{OpType:Get Key:7 Value: ClientId:1663639798575742122 SeqId:28} reply: &{Err:OK Value:0vOFENBbQvAW2tq1D6Vq}
+003871 [INFO] #0(gid: 100) args: &{OpType:Get Key:8 Value: ClientId:1663639798575742122 SeqId:29} reply: &{Err:ErrWrongLeader Value:}
+003872 <Raft> [INFO] #1 replicate, term: 1
+003872 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 4449414238792481324 62 map[] [] 0 0 3}
+003872 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1699893556917021357 4 map[] [] 0 0 3}
+003875 <Raft> [INFO] #1 replicate, term: 4
+003876 <Raft> [INFO] #2 replicate, term: 2
+003878 <Raft> [INFO] #1 replicate, term: 1
+003878 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1699893556917021357 4 map[] [] 0 0 3}
+003883 [INFO] #1(gid: 100) args: &{OpType:Get Key:8 Value: ClientId:1663639798575742122 SeqId:29} reply: &{Err:OK Value:4fET22XN-DthuTxwLUTg}
+003883 [INFO] #0(gid: 100) args: &{OpType:Get Key:9 Value: ClientId:1663639798575742122 SeqId:30} reply: &{Err:ErrWrongLeader Value:}
+003884 <Raft> [INFO] #1 replicate, term: 1
+003894 [INFO] #1(gid: 100) args: &{OpType:Get Key:9 Value: ClientId:1663639798575742122 SeqId:30} reply: &{Err:OK Value:ElE0nSOwDxKqsrtIkV7O}
+003895 [WARN] #0(gid: 100) close shards: map[0:0xc0002e9638 1:0xc0002e9650 2:0xc0002e9668 3:0xc0002e9680 4:0xc0002e9698 5:0xc00021ba70 6:0xc00021ba88 7:0xc00021baa0 8:0xc00021bab8 9:0xc00021bad0] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003895 [WARN] #1(gid: 100) close shards: map[0:0xc0003c26a8 1:0xc0003c26c0 2:0xc0003c26d8 3:0xc0003c26f0 4:0xc0003c2708 5:0xc0003ecc78 6:0xc0003ecc90 7:0xc0003ecca8 8:0xc0003eccc0 9:0xc0003eccd8] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003895 [WARN] #2(gid: 100) close shards: map[0:0xc0002e95c0 1:0xc0002e95d8 2:0xc0002e95f0 3:0xc0002e9608 4:0xc0002e9620 5:0xc000582678 6:0xc000582690 7:0xc0005826a8 8:0xc0005826c0 9:0xc0005826d8] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003895 [WARN] #0(gid: 101) close shards: map[0:0xc0001d9620 1:0xc0001d9638 2:0xc0001d95d8 3:0xc0001d95f0 4:0xc0001d9608] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003895 [WARN] #1(gid: 101) close shards: map[0:0xc0003456e0 1:0xc0003456f8 2:0xc000345710 3:0xc000345728 4:0xc000345740] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003895 [WARN] #2(gid: 101) close shards: map[0:0xc000446420 1:0xc000446438 2:0xc000446450 3:0xc0004463f0 4:0xc000446408] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003895 [WARN] #0(gid: 102) close shards: map[] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003895 [WARN] #1(gid: 102) close shards: map[] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003895 [WARN] #2(gid: 102) close shards: map[] config: {Num:2 Shards:[101 101 101 101 101 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2] 101:[server-101-0 server-101-1 server-101-2]]}
+003919 <Raft> [INFO] #1 replicate, term: 2
+003976 <Raft> [INFO] #2 replicate, term: 2
+003976 <Raft> [INFO] #1 replicate, term: 4
+003978 <Raft> [INFO] #1 replicate, term: 1
+004481 <Raft> [INFO] #2 get vote form #1, &{1 true}
+004481 <Raft> [IMPORTANT] #2 be leader, Term: 1
+004481 <Raft> [INFO] #2 replicate, term: 1
+004481 <Raft> [INFO] #0 get vote form #2, &{1 true}
+004481 <Raft> [IMPORTANT] #0 be leader, Term: 1
+004481 <Raft> [INFO] #0 replicate, term: 1
+004482 <Raft> [INFO] #2 get vote form #1, &{2 true}
+004482 <Raft> [IMPORTANT] #2 be leader, Term: 2
+004482 <Raft> [INFO] #2 replicate, term: 2
+004482 <Raft> [INFO] #0 get vote form #2, &{1 true}
+004482 <Raft> [IMPORTANT] #0 be leader, Term: 1
+004482 <Raft> [INFO] #0 replicate, term: 1
+004483 <Raft> [INFO] #2 get vote form #1, &{2 true}
+004483 <Raft> [IMPORTANT] #2 be leader, Term: 2
+004483 <Raft> [INFO] #2 replicate, term: 2
+004483 <Raft> [INFO] #0 get vote form #2, &{1 true}
+004483 <Raft> [IMPORTANT] #0 be leader, Term: 1
+004483 <Raft> [INFO] #0 replicate, term: 1
+004484 <Raft> [INFO] #2 get vote form #1, &{2 true}
+004484 <Raft> [IMPORTANT] #2 be leader, Term: 2
+004484 <Raft> [INFO] #2 replicate, term: 2
+004485 <Raft> [INFO] #1 get vote form #2, &{2 true}
+004485 <Raft> [IMPORTANT] #1 be leader, Term: 2
+004485 <Raft> [INFO] #1 replicate, term: 2
+004509 <Raft> [INFO] #2 replicate, term: 2
+004509 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 3999205558802537492 1 map[] [] 0 0 -1}
+004510 <Raft> [INFO] #2 replicate, term: 2
+004509 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Join 1640770778301367170 1 map[100:[server-100-0 server-100-1 server-100-2]] [] 0 0 0}
+004509 <ShardCtrler> [INFO] new config: {1 [100 100 100 100 100 100 100 100 100 100] map[100:[server-100-0 server-100-1 server-100-2]]}
+004510 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 3999205558802537492 1 map[] [] 0 0 -1}
+004510 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 3999205558802537492 1 map[] [] 0 0 -1}
+004510 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Join 1640770778301367170 1 map[100:[server-100-0 server-100-1 server-100-2]] [] 0 0 0}
+004510 <ShardCtrler> [INFO] new config: {1 [100 100 100 100 100 100 100 100 100 100] map[100:[server-100-0 server-100-1 server-100-2]]}
+004511 <Raft> [INFO] #2 replicate, term: 2
+004510 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1714510309241456866 1 map[] [] 0 0 1}
+004511 <Raft> [INFO] #1 replicate, term: 2
+004511 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Join 1640770778301367170 1 map[100:[server-100-0 server-100-1 server-100-2]] [] 0 0 0}
+004511 <ShardCtrler> [INFO] new config: {1 [100 100 100 100 100 100 100 100 100 100] map[100:[server-100-0 server-100-1 server-100-2]]}
+004511 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1714510309241456866 1 map[] [] 0 0 1}
+004512 <Raft> [INFO] #2 replicate, term: 2
+004512 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 988115687031320180 1 map[] [] 0 0 1}
+004513 <Raft> [INFO] #2 replicate, term: 2
+004513 <Raft> [INFO] #2 replicate, term: 2
+004513 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1039467269038440813 1 map[] [] 0 0 1}
+004514 <Raft> [INFO] #2 replicate, term: 2
+004514 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1714510309241456866 1 map[] [] 0 0 1}
+004514 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 988115687031320180 1 map[] [] 0 0 1}
+004514 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 988115687031320180 1 map[] [] 0 0 1}
+004514 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1039467269038440813 1 map[] [] 0 0 1}
+004515 [WARN] #2(gid: 100) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+004515 [WARN] #2(gid: 101) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+004515 [WARN] #1(gid: 101) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+004515 [WARN] #0(gid: 102) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+004515 [WARN] #1(gid: 102) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+004515 [WARN] #0(gid: 100) applyConfiguration 1 is &{Num:1 Shards:[100 100 100 100 100 100 100 100 100 100] Groups:map[100:[server-100-0 server-100-1 server-100-2]]}
+004568 <Raft> [INFO] #2 replicate, term: 2
+004568 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1714510309241456866 2 map[] [] 0 0 2}
+004568 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1039467269038440813 1 map[] [] 0 0 1}
+004569 <Raft> [INFO] #2 replicate, term: 2
+004569 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 988115687031320180 2 map[] [] 0 0 2}
+004569 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1714510309241456866 2 map[] [] 0 0 2}
+004569 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1714510309241456866 2 map[] [] 0 0 2}
+004569 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 988115687031320180 2 map[] [] 0 0 2}
+004570 <Raft> [INFO] #2 replicate, term: 2
+004570 <ShardCtrler> [DEBUG] #2 applier接收到日志条目, command:{Query 1039467269038440813 2 map[] [] 0 0 2}
+004570 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 988115687031320180 2 map[] [] 0 0 2}
+004570 <ShardCtrler> [DEBUG] #0 applier接收到日志条目, command:{Query 1039467269038440813 2 map[] [] 0 0 2}
+004582 <Raft> [INFO] #2 replicate, term: 2
+004582 <ShardCtrler> [DEBUG] #1 applier接收到日志条目, command:{Query 1039467269038440813 2 map[] [] 0 0 2}
+004583 <Raft> [INFO] #2 replicate, term: 2
