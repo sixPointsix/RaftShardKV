@@ -13,8 +13,8 @@ import (
 	"math/big"
 	"time"
 
-	"gp/labrpc"
-	"gp/shardctrler"
+	"github.com/sixPointsix/RaftShardKV/labrpc"
+	"github.com/sixPointsix/RaftShardKV/shardctrler"
 )
 
 // which shard is a key in?

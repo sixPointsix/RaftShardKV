@@ -17,8 +17,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"gp/labgob"
-	"gp/labrpc"
+	"github.com/sixPointsix/RaftShardKV/labgob"
+	"github.com/sixPointsix/RaftShardKV/labrpc"
 
 	crand "crypto/rand"
 	"encoding/base64"

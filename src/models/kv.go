@@ -2,8 +2,9 @@ package models
 
 import (
 	"fmt"
-	"gp/porcupine"
 	"sort"
+
+	"github.com/sixPointsix/RaftShardKV/porcupine"
 )
 
 type KvInput struct {

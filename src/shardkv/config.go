@@ -8,15 +8,16 @@ import (
 	crand "crypto/rand"
 	"encoding/base64"
 	"fmt"
-	"gp/labrpc"
-	"gp/raft"
-	"gp/shardctrler"
 	"math/big"
 	"math/rand"
 	"runtime"
 	"strconv"
 	"sync"
 	"time"
+
+	"github.com/sixPointsix/RaftShardKV/labrpc"
+	"github.com/sixPointsix/RaftShardKV/raft"
+	"github.com/sixPointsix/RaftShardKV/shardctrler"
 )
 
 type group struct {

@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"gp/models"
-	"gp/porcupine"
+	"github.com/sixPointsix/RaftShardKV/models"
+	"github.com/sixPointsix/RaftShardKV/porcupine"
 )
 
 // The tester generously allows solutions to complete elections in one second

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"gp/labrpc"
+	"github.com/sixPointsix/RaftShardKV/labrpc"
 )
 
 type Clerk struct {

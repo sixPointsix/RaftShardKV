@@ -1,7 +1,7 @@
 package shardkv
 
-import "gp/porcupine"
-import "gp/models"
+import "github.com/sixPointsix/RaftShardKV/porcupine"
+import "github.com/sixPointsix/RaftShardKV/models"
 import "testing"
 import "strconv"
 import "time"

@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"gp/labgob"
-	"gp/labrpc"
-	"gp/raft"
+	"github.com/sixPointsix/RaftShardKV/labgob"
+	"github.com/sixPointsix/RaftShardKV/labrpc"
+	"github.com/sixPointsix/RaftShardKV/raft"
 )
 
 type ShardCtrler struct {

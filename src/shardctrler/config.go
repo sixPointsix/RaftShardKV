@@ -1,10 +1,11 @@
 package shardctrler
 
 import (
-	"gp/labrpc"
-	"gp/raft"
 	"os"
 	"testing"
+
+	"github.com/sixPointsix/RaftShardKV/labrpc"
+	"github.com/sixPointsix/RaftShardKV/raft"
 
 	crand "crypto/rand"
 	"encoding/base64"

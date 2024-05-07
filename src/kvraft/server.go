@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gp/labgob"
-	"gp/labrpc"
-	"gp/raft"
+	"github.com/sixPointsix/RaftShardKV/labgob"
+	"github.com/sixPointsix/RaftShardKV/labrpc"
+	"github.com/sixPointsix/RaftShardKV/raft"
 )
 
 type Op struct {

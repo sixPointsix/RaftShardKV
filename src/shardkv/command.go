@@ -3,7 +3,7 @@ package shardkv
 import (
 	"fmt"
 
-	"gp/shardctrler"
+	"github.com/sixPointsix/RaftShardKV/shardctrler"
 )
 
 type Command struct {

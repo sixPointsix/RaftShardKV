@@ -8,10 +8,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gp/labgob"
-	"gp/labrpc"
-	"gp/raft"
-	"gp/shardctrler"
+	"github.com/sixPointsix/RaftShardKV/labgob"
+	"github.com/sixPointsix/RaftShardKV/labrpc"
+	"github.com/sixPointsix/RaftShardKV/raft"
+	"github.com/sixPointsix/RaftShardKV/shardctrler"
 )
 
 const threshold float32 = 0.8

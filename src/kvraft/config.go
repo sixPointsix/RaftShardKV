@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"gp/labrpc"
+	"github.com/sixPointsix/RaftShardKV/labrpc"
 
 	// import "log"
 	crand "crypto/rand"
@@ -17,7 +17,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gp/raft"
+	"github.com/sixPointsix/RaftShardKV/raft"
 )
 
 func randstring(n int) string {

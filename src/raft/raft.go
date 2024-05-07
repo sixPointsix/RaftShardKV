@@ -24,9 +24,9 @@ import (
 
 	"math/rand"
 
-	"gp/labgob"
+	"github.com/sixPointsix/RaftShardKV/labgob"
 
-	"gp/labrpc"
+	"github.com/sixPointsix/RaftShardKV/labrpc"
 )
 
 // as each Raft peer becomes aware that successive log entries are

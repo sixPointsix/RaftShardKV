@@ -1,6 +1,6 @@
 package shardkv
 
-import "gp/shardctrler"
+import "github.com/sixPointsix/RaftShardKV/shardctrler"
 
 // detect confiration change
 func (kv *ShardKV) configureAction() {
